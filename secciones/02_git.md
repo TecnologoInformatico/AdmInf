@@ -36,7 +36,7 @@ $ git branch mejora_486
 
 Mueve el espacio de trabajo a una rama especificada.
 
-Ejemplo: 
+Ejemplo:
 
     $ git checkout mejora_486
     $ git -b checkout rama_nueva (la opción -b crea la rama y nos mueve)

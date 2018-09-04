@@ -1,4 +1,4 @@
-# Tarea repaso
+# Tarea de repaso primer parte
 
 ## Usuarios
 
@@ -30,4 +30,4 @@
 ## Compartir
 
 Complete la información que le resulte útil para completar la tarea y haga otro commit en la rama repaso.
-Investigue como realizar un push request para enviar los cambios realizados.
+Investigue como realizar un push request para enviar los cambios realizados al repositorio de origen.
