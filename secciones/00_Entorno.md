@@ -47,8 +47,7 @@ Ejemplos:
 
 Toda operación dentro de un proceso tiene una entrada y una salida (I/O) y en algunas ocaciones una salida de error.
 
-- Si no hay redireccionamiento la entrada y la salida son la entrada estándar y salida estándar
-respectivamente.
+- Si no hay redireccionamiento la entrada y la salida son la entrada estándar y salida estándar respectivamente.
 - La entrada estándar usualmente es el teclado, y la salida usualmente la ventana actual o terminal.
 
 El símbolo > permite redireccionar la salida a un archivo.
@@ -56,14 +55,14 @@ El símbolo < permite redireccionar la entrada, de modo que el comando tome dato
 Si el nombre del archivo existe, > sobrescribe.
 Si se desea agregar al final de un archivo (append) se utiliza >> (si no existe el archivo, se crea).
 
-jemplo:
+Ejemplo:
 
-    $ ls /home/tecnologo >> test
+    - $ ls /home/tecnologo >> test
 
 Redireccionar el error:
 
-    $ ls /home/tecno 2> test.errorCombinación de comandos | 
-    
+    - $ ls /home/tecno 2> test.errorCombinación de comandos |
+
 ## Pipes y pipeline
 
 Las tuberías (en inglés “pipes”) son mecanismos de comunicación específicos para todos los sistemas tipo UNIX. Una tubería, simbolizada por una barra vertical | permite asignar la salida estándar (stdout) de un comando a la entrada estándar (stdin) de otro.

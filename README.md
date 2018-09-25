@@ -7,3 +7,4 @@ Notas de Administración de infraestructuras.
 - [02 - GIT](./secciones/02_git.md)
 - [03 - Acceso Remoto](./secciones/03_acceso_remoto.md)
 - [04 - Tareas Programadas](./secciones/04_tareas_programadas.md)
+- [05 - Compresión y respaldos](./secciones/05_compresion.md)

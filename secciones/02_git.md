@@ -6,7 +6,9 @@ Crear un nuevo repositorio
 
 Ejemplo:
 
-    $ git init
+```sh
+git init
+```
 
 ## clone
 
@@ -14,7 +16,17 @@ Crea una copia local del repositorio
 
 Ejemplo:
 
-    $ git clone username@host:/path/proyecto
+utilizando ssh:
+
+```sh
+git clone username@host:/path/proyecto
+```
+
+utilizando http:
+
+```sh
+git clone https://github.com/TecnologoInformatico/AdmInf.git
+```
 
 ## remote add origin
 
@@ -22,15 +34,19 @@ Agrega un servidor remoto
 
 Ejemplo:
 
-    $ git remote add origin
+```sh
+git remote add origin
+```
 
 ## branch
 
 Crea una nueva rama.
 
-Ejemplo: 
+Ejemplo:
 
-$ git branch mejora_486
+```sh
+git branch mejora_486
+```
 
 ## checkout
 
@@ -38,8 +54,17 @@ Mueve el espacio de trabajo a una rama especificada.
 
 Ejemplo:
 
-    $ git checkout mejora_486
-    $ git -b checkout rama_nueva (la opción -b crea la rama y nos mueve)
+```sh
+git checkout mejora_486
+```
+
+Otra forma de hacerlo todo de una vez:
+
+```sh
+git -b checkout rama_nueva
+```
+
+La opción -b crea la rama y nos mueve.
 
 ## add
 
@@ -54,16 +79,21 @@ Ejemplo:
 
 Actualiza el repositorio remoto con los datos locales.
 
-Ejemplo: 
+Ejemplo:
 
-$ git push <repositorioRemoto> <rama>
+```sh
+git push <repositorioRemoto> <rama>
+```
 
 ## Configuración de usuario
 
-    git config --global user.name "nombre"
-
-    git config --global user.email x@mail.com
+```sh
+git config --global user.name "nombre"
+git config --global user.email x@mail.com
+```
 
 ## Diferencias
 
-    git diff <commitX> <commitY>
+```sh
+git diff <commitX> <commitY>
+```
