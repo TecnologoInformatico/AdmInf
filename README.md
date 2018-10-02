@@ -8,3 +8,5 @@ Notas de Administración de infraestructuras.
 - [03 - Acceso Remoto](./secciones/03_acceso_remoto.md)
 - [04 - Tareas Programadas](./secciones/04_tareas_programadas.md)
 - [05 - Compresión y respaldos](./secciones/05_compresion.md)
+- [06 - Servidor web Apache](./secciones/06_servidores_web.md)
+
