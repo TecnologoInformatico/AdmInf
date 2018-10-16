@@ -27,9 +27,6 @@ quit
 ##Desconectar
 mySQL> QUIT
 
-## Instalar phpMyAdmin
-sudo apt-get install phpmyadmin
-
 ## Utilizar una base de datos
 use mysql;
 
