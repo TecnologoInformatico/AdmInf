@@ -1,3 +1,5 @@
+# Servicios
+
 # Para Linux
 La manera de administrar servicios en distribuciones Linux es utilizar el comando systmctl.
 El principal cometido de los servicios es iniciar los componentes que deben ser inicializados después de que se bootea el sistema operativo.
@@ -8,7 +10,7 @@ Nota: Esta solución no está implementadas para todas las distribuciones de Lin
 $ sudo systemctl start aplicacion.service
 
 ### Detener
-$ sudo systemctl stop application.service
+$ sudo systemctl stop aplicacion.service
 
 ## Reiniciar y regargar servicios
 ### Reiniciar
