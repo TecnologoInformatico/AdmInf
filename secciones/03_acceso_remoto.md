@@ -44,8 +44,7 @@ sftp username@remote_hostname_or_IP:file :    Copia el archivo designado (file) 
 En windows se puede utilizar puTTY tanto  para  utilizar cliente SSH como para SCP y SFTP
 Tambien podemos encontrar WinSCP como cliente SCP, FreeSSHD como Cliente SSH y SFTP.
 
-
-##Remmina
+## Remmina
 
 Funciona con RDP, VNC y SSH
 
@@ -63,9 +62,7 @@ Como instalamos Remmina?
 una cuenta existente.
 -ya tendremos acceso a ese equipo.
 
-
-
-##Remote Dekstop
+## Remote Dekstop
 
 Remote Desktop Protocol (RDP) es un protocolo propietario desarrollado por
  Microsoft que permite la comunicación en la ejecución de una aplicación entre
