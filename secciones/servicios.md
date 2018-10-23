@@ -71,7 +71,7 @@ Resume-Service
 Set-Service
 
 ## Iniciar servicio
-Start-Service15
+Start-Service
 
 ## Detener servicio
 Stop-Service
