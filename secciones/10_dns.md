@@ -1,4 +1,6 @@
-# bind9
+# DNS
+
+*Domain Name System* Se encarga de traducir nombres de host a direcciones IP.
 
 Establecer un servidor DNS en una red permite remplazar las IPs de las máquinas por nombres. De tal modo es posible asociar múltiples nombres a un mismo equipo para asociar diferentes servicios disponibles.
 
@@ -6,19 +8,9 @@ Por ejemplo, www.example.com y pop.example.com, ambos pueden apuntar a un mismo 
 
 A modo de ejemplo, en caso de que el administrador de la red deba por algún motivo mover el servidor de correo a otra máquina, bastará con modificar el archivo de configuración DNS.
 
-## Definiciones
+## bind9
 
-### DNS
-
-*Domain Name System* o *Domain Name Server*
-
-### Servidor Primario
-
-### Servidor Secundario
-
-### Servidor Caché
-
-## Instalación
+### Instalación
 
 El paquete bind9 puede ser instalado mediante:
 
@@ -32,7 +24,7 @@ También es muy útil la instalación de la documentación:
 apt-get install bind9-doc
 ```
 
-## Configuración
+### Configuración
 
 Los archivos de configuración se encuentran en el directorio */etc/bind/*.
 
