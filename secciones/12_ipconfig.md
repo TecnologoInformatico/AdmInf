@@ -3,11 +3,9 @@
 Muestra los valores actuales de la configuración de la red TCP/IP y actualiza la configuración de DHCP (Protocolo de configuración dinámica de host) y DNS (Sistema de nombres de dominio).
 Si se utiliza sin parámetros, ipconfig muestra la dirección IP, la máscara de subred y la puerta de enlace predeterminada de todos los adaptadores de red.
 
-
 ## Sintaxis
 
     ipconfig [/all] [/renew [adaptador]] [/release [adaptador]] [/flushdns] [/displaydns] [/registerdns] [/showclassid adaptador] [/setclassid adaptador [IdDeClase]]
- 
 
 ## Parámetros
 
@@ -29,9 +27,7 @@ Si se utiliza sin parámetros, ipconfig muestra la dirección IP, la máscara de
 
     /?: muestra Ayuda en el símbolo del sistema.
 
-
-
-# ifconfig
+## ifconfig
 
        ifconfig - configura un interfaz de red
 
@@ -39,7 +35,6 @@ Si se utiliza sin parámetros, ipconfig muestra la dirección IP, la máscara de
 
        ifconfig [interfaz]
        ifconfig interfaz [aftype] opciones | dirección ...
-
 
 ## DESCRIPCIÓN
 
@@ -54,114 +49,113 @@ Si se utiliza sin parámetros, ipconfig muestra la dirección IP, la máscara de
        estado  de  todos  los  interfaces,  incluso  de  aquellos que no están
        activos. De otro modo, configura un interfaz.
 
-
 ## OPTIONS
 
-       interfaz
-	      El  nombre  de  un  interfaz.  Suele  ser el nombre de un driver
-	      seguido por el número de una unidad, por ejemplo: eth0  para  el
-	      primer interfaz Ethernet.
+interfaz
+	El  nombre  de  un  interfaz.  Suele  ser el nombre de un driver
+	seguido por el número de una unidad, por ejemplo: eth0  para  el
+	primer interfaz Ethernet.
 
-       up     Esta  opción  hace  que  el  interfaz  se  active. Se especifica
-	      implícitamente si se asigna una dirección al interfaz.
+up     Esta  opción  hace  que  el  interfaz  se  active. Se especifica
+	implícitamente si se asigna una dirección al interfaz.
 
-       down   Esta opción hace que el interfaz se cierre.
+down   Esta opción hace que el interfaz se cierre.
 
-       [-]arp Activa o desactiva el uso del protocolo ARP para este interfaz.
+[-]arp Activa o desactiva el uso del protocolo ARP para este interfaz.
 
-       [-]promisc
-	      Activa o	desactiva  el  modo  promiscuo	del  interfaz.	Si  se
-	      selecciona, el interfaz recibirá todos los paquetes de la red.
+[-]promisc
+	Activa o	desactiva  el  modo  promiscuo	del  interfaz.	Si  se
+	selecciona, el interfaz recibirá todos los paquetes de la red.
 
-       [-]allmulti
-	      Activa  o desactiva el modo all-multicast.  Si se selecciona, el
-	      interfaz recibirá todos los paquetes multicast de la red.
+[-]allmulti
+	Activa  o desactiva el modo all-multicast.  Si se selecciona, el
+	interfaz recibirá todos los paquetes multicast de la red.
 
-       metric N
-	      Esta opción establece la métrica de la interfaz.
+metric N
+	Esta opción establece la métrica de la interfaz.
 
-       mtu N  Este parámetro establece la Unidad de Transferencia Máxima (MTU)
-	      de un interfaz.
+mtu N  Este parámetro establece la Unidad de Transferencia Máxima (MTU)
+	de un interfaz.
 
-       dstaddr addr
-	      Establece la dirección IP remota de una unión punto-a-punto (tal
-	      como PPP).  Hoy en día esta  opción  resulta  obsoleta;  use  la
-	      opción pointopoint en su lugar.
+dstaddr addr
+	Establece la dirección IP remota de una unión punto-a-punto (tal
+	como PPP).  Hoy en día esta  opción  resulta  obsoleta;  use  la
+	opción pointopoint en su lugar.
 
-       netmask addr
-	      Establece  la  máscara  de red IP para un iterfaz. Este valor es
-	      por defecto el de la máscara de red normal de clase  A,  B  o  C
-	      (tal  y  como  se  deriva  de la dirección IP del iterfaz), pero
-	      puede configurarse para cualquier valor.
+netmask addr
+	Establece  la  máscara  de red IP para un iterfaz. Este valor es
+	por defecto el de la máscara de red normal de clase  A,  B  o  C
+	(tal  y  como  se  deriva  de la dirección IP del iterfaz), pero
+	puede configurarse para cualquier valor.
 
-       add addr/prefixlen
-	      Añade una dirección Ipv6 a un interfaz.
+add addr/prefixlen
+	Añade una dirección Ipv6 a un interfaz.
 
-       del addr/prefixlen
-	      Elimina una dirección Ipv6 de un interfaz.
+del addr/prefixlen
+	Elimina una dirección Ipv6 de un interfaz.
 
-       tunnel aa.bb.cc.dd
-	      Crea  un	nuevo	dispositivo   SIT   (Ipv6-en-Ipv4),   mediante
-	      encapsulamiento al destino especificado.
+tunnel aa.bb.cc.dd
+	Crea  un	nuevo	dispositivo   SIT   (Ipv6-en-Ipv4),   mediante
+	encapsulamiento al destino especificado.
 
-       irq addr
-	      Establece  la línea de interrupción usada por el dispositivo. No
-	      todos los dispositivos pueden cambiar su	configuración  de  IRQ
-	      dinámicamente.
+irq addr
+	Establece  la línea de interrupción usada por el dispositivo. No
+	todos los dispositivos pueden cambiar su	configuración  de  IRQ
+	dinámicamente.
 
-       io_addr addr
-	      Establece  la  dirección	inicial en el espacio de E/S para este
-	      dispositivo.
+io_addr addr
+	Establece  la  dirección	inicial en el espacio de E/S para este
+	dispositivo.
 
-       mem_start addr
-	      Establece la dirección inicial para la memoria compartida  usada
-	      por  el  dispositivo.  Muy  pocos  dispositivos  necesitan  esta
-	      opción.
+mem_start addr
+	Establece la dirección inicial para la memoria compartida  usada
+	por  el  dispositivo.  Muy  pocos  dispositivos  necesitan  esta
+	opción.
 
-       media type
-	      Establece el puerto físico o el tipo de medio que ha de usar  el
-	      dispositivo.   No  todos	los dispositivos pueden modificar esta
-	      configuración, y aquellos que pueden  varian  en	cuanto	a  los
-	      valores  que  pueden  admitir.  Los  valores típicos de type son
-	      10base2  (thin  Ethernet),  10baseT  (10Mbps  Ethernet  de   par
-	      trenzado),  AUI  (transceptor  externo),	etc.  El tipo de medio
-	      especial	auto  se  puede  usar  para  decirle  al  driver   que
-	      autodetecte  el  medio.  Una  vez más, no todos los dispositivos
-	      pueden hacer esto.
+media type
+	Establece el puerto físico o el tipo de medio que ha de usar  el
+	dispositivo.   No  todos	los dispositivos pueden modificar esta
+	configuración, y aquellos que pueden  varian  en	cuanto	a  los
+	valores  que  pueden  admitir.  Los  valores típicos de type son
+	10base2  (thin  Ethernet),  10baseT  (10Mbps  Ethernet  de   par
+	trenzado),  AUI  (transceptor  externo),	etc.  El tipo de medio
+	especial	auto  se  puede  usar  para  decirle  al  driver   que
+	autodetecte  el  medio.  Una  vez más, no todos los dispositivos
+	pueden hacer esto.
 
-       [-]broadcast [addr]
-	      Si se da un argumento de dirección, establece  la  dirección  de
-	      emisión  del  protocolo del interfaz. De otro modo, establece (o
-	      elimina) la opción IFF_BROADCAST del interfaz.
+[-]broadcast [addr]
+	Si se da un argumento de dirección, establece  la  dirección  de
+	emisión  del  protocolo del interfaz. De otro modo, establece (o
+	elimina) la opción IFF_BROADCAST del interfaz.
 
-       [-]pointopoint [addr]
-	      Esta opción activa el modo point-to-point (punto	a  punto)  del
-	      interfaz,  lo  cual  significa que se trata de una unión directa
-	      entre dos máquinas, sin nadie más a la escucha.
-	      Si se  da  también  un  argumento  de  dirección,  establece  la
-	      dirección  de  protocolo	del otro lado de la unión, exactamente
-	      igual que hace la opción obsoleta dstaddr.  Si no,  establece  o
-	      elimina la opción IFF_POINTOPOINT del interfaz.
+[-]pointopoint [addr]
+	Esta opción activa el modo point-to-point (punto	a  punto)  del
+	interfaz,  lo  cual  significa que se trata de una unión directa
+	entre dos máquinas, sin nadie más a la escucha.
+	Si se  da  también  un  argumento  de  dirección,  establece  la
+	dirección  de  protocolo	del otro lado de la unión, exactamente
+	igual que hace la opción obsoleta dstaddr.  Si no,  establece  o
+	elimina la opción IFF_POINTOPOINT del interfaz.
 
-       hw class address
-	      Establece  la dirección de hardware del interfaz, siempre que el
-	      driver del dispositivo lo permita. Esta opción debe  ir  seguida
-	      del  nombre de la clase de hardware y el código ASCII imprimible
-	      equivalente de la dirección del hardware. Las clases de hardware
-	      soportadas  actualmente  incluyen:  ether (Ethernet), ax25 (AMPR
-	      AX.25), ARCnet y netrom (AMPR NET/ROM).
+hw class address
+	Establece  la dirección de hardware del interfaz, siempre que el
+	driver del dispositivo lo permita. Esta opción debe  ir  seguida
+	del  nombre de la clase de hardware y el código ASCII imprimible
+	equivalente de la dirección del hardware. Las clases de hardware
+	soportadas  actualmente  incluyen:  ether (Ethernet), ax25 (AMPR
+	AX.25), ARCnet y netrom (AMPR NET/ROM).
 
-       multicast
-	      Establece la opción multicast del interfaz. Normalmente esto  no
-	      debería  ser  necesario  dado  que  los  drivers establecen esta
-	      opción correctamente.
+multicast
+	Establece la opción multicast del interfaz. Normalmente esto  no
+	debería  ser  necesario  dado  que  los  drivers establecen esta
+	opción correctamente.
 
-       address
-	      La dirección IP que se va a asignar al interfaz.
+address
+	La dirección IP que se va a asignar al interfaz.
 
-       txqueuelen length
-	      Establece la longitud de la cola de transmisión del dispositivo.
-	      Resulta útil configurar este parámetro con valores pequeños para
-	      dispositivos más lentos con latencias altas (uniones de  modems,
-	      ISDN)  para evitar que las transferencias masivas de información
-	      interfieran demasiado el tráfico interactivo del tipo telnet.
+txqueuelen length
+	Establece la longitud de la cola de transmisión del dispositivo.
+	Resulta útil configurar este parámetro con valores pequeños para
+	dispositivos más lentos con latencias altas (uniones de  modems,
+	ISDN)  para evitar que las transferencias masivas de información
+	interfieran demasiado el tráfico interactivo del tipo telnet.
