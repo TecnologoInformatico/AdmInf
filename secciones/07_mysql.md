@@ -1,4 +1,8 @@
 # mySQL
+## Instalar
+
+Para instalarlo se debera poner:
+ $ apt-get install mysql-server mysql-client
 
 ##Instalar
 sudo apt-get update
@@ -11,6 +15,8 @@ Para iniciar en el usuario root sin contraseña:
 ```sh
 sudo mysql
 ```
+## Mostrar las bases de datos
+show databases;
 
 ##Crear una base de datos
 mysql -h servidor -u usuario -p
@@ -33,10 +39,21 @@ sudo apt-get install phpmyadmin
 ## Utilizar una base de datos
 use mysql;
 
-##Crear Usuario
+## Crear una base de datos
+
+create database nombre_de_base_de_datos character set utf8;
+## Crear usuarios
+
 CREATE USER usuario IDENTIFIED BY password;
 
+create user nuevo_usuario@'localhost';
+para su contraseña: 
+set password for 'nuevo_usuario'@'localhost' = PASSWORD('UnAcl4v3muyDiFiCiL');
+Privilegios:
+grant all on nombre_de_base_de_datos.* to 'nuevo_usuario'@'localhost' ;
+
 ##Eliminar Usuario
+
 DROP USER usuario;
 
 ## Listar usuarios
