@@ -1,13 +1,25 @@
 #Systemctl
 
-##Iniciar Servicio
+Se utiliza para realizar una introspeccion y controlar el estado del sistema "systemd" y gerente de servicios.
+
+Sinopsis
+systemctl [Opciones ...] Comando [Nombre ...]
+
+Opciones:
+-t, --type : lista separada por comas de tipos de unidades
+-p, --property : muestra todas las propiedades con los nombres identificados
+
+## Iniciar Servicio
+
 sudo systemctl start application.service
 
 Administracion General
 sudo systemctl start application 
 
-##Parar Servicio
+## Parar Servicio
+
 sudo systemctl stop application.service
 
-##Reinicio y recarga
+## Reinicio y recarga
+
 sudo systemctl restart application.service

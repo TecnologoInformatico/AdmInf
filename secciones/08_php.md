@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # PHP
 
 ## instalar PHP
@@ -8,6 +7,7 @@ $ sudo apt-get install php7.0 libapache2-mod-php7.0
 $ sudo apt-get install php7.0-mysql
 
 ## Iniciar Servidor
+
 php -S localhost:4000
 Inicia un servidor nuevo en localhost y escucha en el puerto 4000
 
@@ -20,26 +20,19 @@ instalar el paquete php7.0-mysql
 (es necesario reiniciar Apache)
 
 ### Ver información de instalación PHP
+
 php -r "phpinfo();" > nombreArchivo
 Lo vuelca en un archivo
-=======
-#Como instalar PHP en ubuntu
-
-#Requisitos previos
 
 #instalar apache y permitir fairwall
 $ sudo apt-get update
 $ sudo apt-get install apache2
 
-#Establecer server name para suprimir los errores de sintaxis
+## Establecer server name para suprimir los errores de sintaxis
 $ sudo apache2ctl configtest
 $ sudo gedit /etc/apache2/apache2.conf
 
-#guarde y cierre los cambios
-#revise errores de sintaxis:
+
+## errores de sintaxis
+
 $ sudo apache2ctl configtest
-
-#instalar PHP
-$ sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql
-
->>>>>>> tisj/pichaje

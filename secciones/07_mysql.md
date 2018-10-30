@@ -1,12 +1,12 @@
 # mySQL
+
 ## Instalar
 
 Para instalarlo se debera poner:
+
  $ apt-get install mysql-server mysql-client
 
-##Instalar
-sudo apt-get update
-sudo apt-get install mysql-server mysql-client
+create database 'nombreBaseDeDatos'
 
 ## Iniciar
 
@@ -42,7 +42,11 @@ use mysql;
 ## Crear una base de datos
 
 create database nombre_de_base_de_datos character set utf8;
+
 ## Crear usuarios
+
+Primero ingresar a la consola de Linux, -u toma el usuario y el -p toma la contraseña 
+mysql -u root -p
 
 CREATE USER usuario IDENTIFIED BY password;
 
@@ -81,3 +85,18 @@ ALTER USER 'user'@'hostname' IDENTIFIED BY 'newPass';
 Hotra forma:
 
 UPDATE mysql.user SET Password=PASSWORD('nuevaContraseña') WHERE USER='nombreDeUsuario' AND Host='hostname';
+
+## Otorgar privilegios
+
+GRANT 'privilegios' ON *base de datos* TO 'nombre_usuario'@'localhost';
+
+privilegios:
+
+- ALL PRIVILEGES
+- CREATE
+- DROP
+- DELETE
+- INSERT
+- SELECT
+- UPDATE
+- GRANT OPTION : permite remover privilegios de usuarios.
