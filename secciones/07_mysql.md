@@ -2,7 +2,7 @@
 
 ## Instalar
 
-Para instalarlo se debera poner:
+Para instalarlo se deberá poner:
 
  $ apt-get install mysql-server mysql-client
 
@@ -12,51 +12,52 @@ create database 'nombreBaseDeDatos'
 
 Para iniciar en el usuario root sin contraseña:
 
-```sh
+```s
 sudo mysql
 ```
+
 ## Mostrar las bases de datos
+
 show databases;
 
-##Crear una base de datos
+## Crear una base de datos
+
 mysql -h servidor -u usuario -p
 Enter password;
 mysql> CREATE DATABASE nombre_BD;
 
+## Eliminar una base de datos
 
-##Eliminar una base de datos
 $ mysql -h servidor -u usuario -p
 Enter password
 mysql> DROP DATABASE nombre_de_la_BD;
 quit
 
-##Desconectar
+## Desconectar
+
 mySQL> QUIT
 
 ## Instalar phpMyAdmin
+
 sudo apt-get install phpmyadmin
 
 ## Utilizar una base de datos
+
 use mysql;
-
-## Crear una base de datos
-
-create database nombre_de_base_de_datos character set utf8;
 
 ## Crear usuarios
 
-Primero ingresar a la consola de Linux, -u toma el usuario y el -p toma la contraseña 
-mysql -u root -p
+Primero ingresar a la consola de Linux, -u toma el usuario y el -p toma la contraseña. `mysql -u root -p`
 
-CREATE USER usuario IDENTIFIED BY password;
+`CREATE USER usuario IDENTIFIED BY password;`
 
 create user nuevo_usuario@'localhost';
-para su contraseña: 
+para su contraseña:
 set password for 'nuevo_usuario'@'localhost' = PASSWORD('UnAcl4v3muyDiFiCiL');
 Privilegios:
 grant all on nombre_de_base_de_datos.* to 'nuevo_usuario'@'localhost' ;
 
-##Eliminar Usuario
+## Eliminar Usuario
 
 DROP USER usuario;
 
@@ -76,15 +77,21 @@ modificar contraseña:
 
 Para versiones 5.7.5 o anteriores:
 
+```SQL
 SET PASSWORD FOR 'nombreDeUsuario'@'hostname' = PASSWORD('nuevaContraseña');
+```
 
 Para versiones más nuevas:
 
+```SQL
 ALTER USER 'user'@'hostname' IDENTIFIED BY 'newPass';
+```
 
-Hotra forma:
+otra forma:
 
+```SQL
 UPDATE mysql.user SET Password=PASSWORD('nuevaContraseña') WHERE USER='nombreDeUsuario' AND Host='hostname';
+```
 
 ## Otorgar privilegios
 
