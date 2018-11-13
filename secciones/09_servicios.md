@@ -75,7 +75,7 @@ $ systemctl is-failed aplicacion.service
 
 ## Servicios en Windows
 
-Una de las maneras de administrar los servicios en sistemas operativos Windows es utilizando Windows PowerShell 
+Una de las maneras de administrar los servicios en sistemas operativos Windows es utilizando Windows PowerShell.
 
 Se pueden utilizar los siguientes comandos:
 

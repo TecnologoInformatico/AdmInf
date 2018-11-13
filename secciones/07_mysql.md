@@ -16,6 +16,13 @@ Para iniciar en el usuario root sin contraseña:
 sudo mysql
 ```
 
+En caso de haberle dado una contraseña:
+
+```s
+mysql -h servidor -u usuario -p
+Enter password: ...
+```
+
 ## Mostrar las bases de datos
 
 show databases;
