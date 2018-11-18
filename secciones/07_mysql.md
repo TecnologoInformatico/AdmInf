@@ -16,7 +16,7 @@ Para iniciar en el usuario root sin contraseña:
 sudo mysql
 ```
 
-En caso de haberle dado una contraseña:
+En caso de haberle dado una contraseña, -u para ingresar el usuario y el -p para la contraseña. `mysql -u root -p`
 
 ```s
 mysql -h servidor -u usuario -p
@@ -54,14 +54,16 @@ use mysql;
 
 ## Crear usuarios
 
-Primero ingresar a la consola de Linux, -u toma el usuario y el -p toma la contraseña. `mysql -u root -p`
-
-`CREATE USER usuario IDENTIFIED BY password;`
+`CREATE USER usuario;`
 
 create user nuevo_usuario@'localhost';
-para su contraseña:
+
+## Asignar contraseña
+
 set password for 'nuevo_usuario'@'localhost' = PASSWORD('UnAcl4v3muyDiFiCiL');
-Privilegios:
+
+## Privilegios
+
 grant all on nombre_de_base_de_datos.* to 'nuevo_usuario'@'localhost' ;
 
 ## Eliminar Usuario
