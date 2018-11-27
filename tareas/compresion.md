@@ -19,10 +19,21 @@
  tar -czf ~/bak/repo_bak_02.gzip LosDelFondo
 4.shh alex@192.168.56.101
 5. get repo_bak_01.tar
+get repo_bak_02.gzip
 get repo_back_02.gzip
 6. tar -xf repo_bak_01.tar
 tar -xf repo_bak_02.gzip
-7
+7 rsync es un protocolo que se usa para tranferencia de datos tanto locales o remotos mediante un tunel seguro
+aclarando las direciones a la cual sincronizar
+www.computerhope.com/unix/rsync.htm
+www.vocente-navarro.com/blog/2008/01/13/backups-con-rsync
+8 crear los directorios
+rsync -av dirA dirB
+
+9 modificar los archivos 
+
+rsync -av ~/bak/compresion /home/tecnologo/repo/compresion/
+
 
 
 
