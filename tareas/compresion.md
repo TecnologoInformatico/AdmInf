@@ -2,7 +2,7 @@
 
 1. Clone el repositorio `XXX` en `~/repo/compresion`
 2. realice un tar sin compresión del repositorio: `~/bak/repo_bak_01.tar`.
-3. realice un tar con compresión del repositorio: `~/bak/repo_bak_02.gzip`.
+3. realice un tar con compresión del repositorio: `~/bak/repo_bak_02.tgz`.
 4. Utilice el comando sftp para trasladar el repositorio en su estado original al host.
 5. Realice el traslado por sftp, esta vez para los archivos dentro de bak.
 6. Extraiga los archivos de ambos archivos.

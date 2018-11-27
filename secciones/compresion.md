@@ -5,18 +5,21 @@
 tar [OPTION...] [FILE]...
 
 Comando utilizado para empaquetar archivos
+(`tar` alias para `tape archive`)
 
-- c opción para crear el archivo tar.
-- v activa el modo verbose, documenta el empaquetado
-- f [nombreArchivo] le otorga un nombre al archivo empaquetado
-- z realiza el comando tar y el comando gzip a la vez
-- x extrae los archivos.
+- `c` opción para crear el archivo tar.
+- `v` activa el modo verbose, documenta el empaquetado
+- `f` [nombreArchivo] le otorga un nombre al archivo empaquetado
+- `z` realiza el comando tar y el comando gzip a la vez
+- `x` extrae los archivos.
+- `t` lista el contenido de un archivo tar.
+- `r` Agrega contenido al archivo.
 
 Ejemplo:
 
 comprimir el directorio dir
 
-```sh
+```s
 tar -czvf respaldo_dir.tar dir
 Compresion
 
@@ -24,7 +27,7 @@ Compresion
 
 descomprimir
 
-```sh
+```s
 tar -xzvf respaldo_dir.tar dir
 ```
 
@@ -32,8 +35,8 @@ tar -xzvf respaldo_dir.tar dir
 
 Es un herramienta de compresión de Linux, comprime paquetes, archivos a .tar, es utilizado de la siguiente forma:
 
-```sh
-$ gzip ruta/archivo/a/comprimir
+```s
+gzip ruta/archivo/a/comprimir
 ```
 
 Si se esta situado en el directorio del archivo solo se da el nombre del archivo
