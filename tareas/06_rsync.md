@@ -9,8 +9,9 @@
   `time tar czf sandbox.tgz sandbox`
 4. Cree un archivo nuevo y agregelo a ambos paquetes.
   `ll /bin > sandbox/heavyDoc.txt`
-  `tar ???`
-5. Investigue como actualizar el archivo `.tgz`.
+  `tar ???` YO: tar cfz heavyDoc.tgz sandbox/heavyDoC.txt
+5. Investigue como actualizar el archivo `.tgz`.  YO: tar tf nombre archivo,
+
 6. Cree el directorio `~/foo` y muevase a el.
 7. Archive el directorio sandbox desde ahí mediante rutas absolutas.
   Descombrima y vea el resultado, ¿sucedió algo inesperado?
