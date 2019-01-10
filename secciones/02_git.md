@@ -28,14 +28,24 @@ utilizando http:
 git clone https://github.com/TecnologoInformatico/AdmInf.git
 ```
 
-## remote add origin
+## Repositorios Remotos
 
-Agrega un servidor remoto
+Para ver los repositorios remotos
 
-Ejemplo:
+```s
+git remote -v
+```
 
-```sh
-git remote add origin
+Agregar un servidor remoto:
+
+```s
+git remote add origin https://github.com/user/repo.git
+```
+
+Modificar:
+
+```s
+git remote set-url origin https://github.com/TecnologoInformatico/AdmInf.git
 ```
 
 ## branch
@@ -47,6 +57,22 @@ Ejemplo:
 ```sh
 git branch mejora_486
 ```
+
+### Archivar branch
+
+Para archivar un branch agregarle un tag para luego poder buscarlo mediante el:
+
+    git tag archive/<branchname> <branchname>
+
+Luego eliminarlo.
+
+    git branch -d <branchname>
+
+En caso de necesitar restaurarlo:
+
+    git checkout -b <branchname> archive/<branchname>
+
+- [stackoverflow | how can i archive git branches](https://stackoverflow.com/questions/1307114/how-can-i-archive-git-branches)
 
 ## checkout
 
