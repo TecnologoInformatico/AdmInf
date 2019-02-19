@@ -1,5 +1,17 @@
 # Logs
 
+## Linux
+
+### last reboot
+
+`last reboot` Provee iformación sobre los últimos reinicios.
+
+Es posible indagar entre los logs y generar un archivo limpio con lo buscado: `egrep -i '(shut|reboot)' messages > reboots.log`.
+
+### /var/log
+
+
+
 ## Visor de eventos (Windows)
 
 El visor de eventos puede mostrar que errores se produjeron y ayudarlo a descubrir por que ocurrieron, también mostrara nivel de urgencia, desde iconos de baja altura usando el lado izquierdo de la pantalla.
