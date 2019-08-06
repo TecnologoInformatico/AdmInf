@@ -1,5 +1,13 @@
 # Logs
 
+## Linux
+
+### last reboot
+
+`last reboot` Provee iformación sobre los últimos reinicios.
+
+Es posible indagar entre los logs y generar un archivo limpio con lo buscado: `egrep -i '(shut|reboot)' messages > reboots.log`.
+
 ## Logs destacados en Linux
 
 ### auth.log
@@ -7,6 +15,8 @@
 ### dpkg.log
 
 ### syslog
+
+### /var/log
 
 ## Visor de eventos (Windows)
 
