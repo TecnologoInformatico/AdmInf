@@ -62,15 +62,15 @@ git branch mejora_486
 
 Para archivar un branch agregarle un tag para luego poder buscarlo mediante el:
 
-    git tag archive/<branchname> <branchname>
+`git tag archive/<branchname> <branchname>`
 
 Luego eliminarlo.
 
-    git branch -d <branchname>
+`git branch -d <branchname>`
 
 En caso de necesitar restaurarlo:
 
-    git checkout -b <branchname> archive/<branchname>
+`git checkout -b <branchname> archive/<branchname>`
 
 - [stackoverflow | how can i archive git branches](https://stackoverflow.com/questions/1307114/how-can-i-archive-git-branches)
 
@@ -80,13 +80,13 @@ Mueve el espacio de trabajo a una rama especificada.
 
 Ejemplo:
 
-```sh
+```s
 git checkout mejora_486
 ```
 
 Otra forma de hacerlo todo de una vez:
 
-```sh
+```s
 git -b checkout rama_nueva
 ```
 
@@ -98,8 +98,10 @@ Prepara el archivo indicado.
 
 Ejemplo:
 
-    $ git add README.md
-    $ git add -A (agrega todos los archivos pendientes)
+```s
+$ git add README.md
+$ git add -A (agrega todos los archivos pendientes)
+```
 
 ## push
 
