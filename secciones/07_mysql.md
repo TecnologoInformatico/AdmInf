@@ -27,6 +27,14 @@ Enter password: ...
 
 show databases;
 
+## Utilizar una base de datos
+
+use nombre-base-de-datos;
+
+## Mostrar las tablas
+
+show tables;
+
 ## Crear una base de datos
 
 mysql -h servidor -u usuario -p
@@ -58,23 +66,15 @@ use mysql;
 
 create user nuevo_usuario@'localhost';
 
-## Asignar contraseña
-
-set password for 'nuevo_usuario'@'localhost' = PASSWORD('UnAcl4v3muyDiFiCiL');
-
-## Privilegios
-
-grant all on nombre_de_base_de_datos.* to 'nuevo_usuario'@'localhost' ;
-
 ## Eliminar Usuario
 
 DROP USER usuario;
 
 ## Listar usuarios
 
-select *.from mysql.user;
-
-mysql> select user from mysql.user;
+```SQL
+select User from mysql.user;
+```
 
 Ver detalles de la tabla:
 
@@ -82,7 +82,7 @@ desc mysql.user;
 
 ## Modificar usuario
 
-modificar contraseña:
+### Asignar contraseña
 
 Para versiones 5.7.5 o anteriores:
 
@@ -102,9 +102,15 @@ otra forma:
 UPDATE mysql.user SET Password=PASSWORD('nuevaContraseña') WHERE USER='nombreDeUsuario' AND Host='hostname';
 ```
 
+set password for 'nuevo_usuario'@'localhost' = PASSWORD('UnAcl4v3muyDiFiCiL');
+
 ## Otorgar privilegios
 
-GRANT 'privilegios' ON *base de datos* TO 'nombre_usuario'@'localhost';
+`GRANT 'privilegios' ON basededatos.tabla TO 'nombre_usuario'@'localhost';`
+
+GRANT ALL PRIVILEGES ON `usuario\_%` . * TO 'usuario'@'localhost';
+
+El primer comando le otorga los privilegios al usuario `nombre_usuario` en la tabla `tabla` de la base de datos `basededatos`, el segundo comando le otorga todos los privilegios a todas las tablas de todas las bases de datos que comiencen con su nombre. Este ultimo es útil para permitir que un usuario pueda administrar las bases de datos restringido por su nombre, o algun prefijo.
 
 privilegios:
 
@@ -116,3 +122,9 @@ privilegios:
 - SELECT
 - UPDATE
 - GRANT OPTION : permite remover privilegios de usuarios.
+
+Ejemplo:
+
+## Privilegios
+
+`grant all on nombre_de_base_de_datos.* to 'nuevo_usuario'@'localhost';`

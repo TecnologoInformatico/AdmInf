@@ -12,6 +12,8 @@ sudo apt-get update
 sudo apt-get install apache2
 ```
 
+Luego de instalar es posible comprobar el [estado del servidor](###_Comprobar_estado) mediante la herramienta systemctl o ingresando desde el navegador a [localhost](http://localhost).
+
 ### Directorios y archivos
 
 Luego de la instalación en las distribuciones procedentes de debian la estructura creada es la siguiente:
@@ -70,6 +72,10 @@ systemctl status apache2
 ```
 
 En caso de no tener systemctl instalado se puede utilizar /etc/init.d/apache2 status
+
+## Errores de sintaxis
+
+$ sudo apache2ctl configtest
 
 ## Virtual Host
 

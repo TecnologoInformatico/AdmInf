@@ -1,5 +1,13 @@
 # Logs
 
+## Logs destacados en Linux
+
+### auth.log
+
+### dpkg.log
+
+### syslog
+
 ## Visor de eventos (Windows)
 
 El visor de eventos puede mostrar que errores se produjeron y ayudarlo a descubrir por que ocurrieron, también mostrara nivel de urgencia, desde iconos de baja altura usando el lado izquierdo de la pantalla.

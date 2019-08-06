@@ -24,6 +24,14 @@ Para parar el servidor:
 
     sudo /etc/init.d/ssh stop
 
+### Autenticación ssh basada en par de claves
+
+`ssh-keygen`
+
+El par de claves se genera por defecto en el directorio `/home/username/.ssh/id_rsa`.
+
+[ssh key-based authentication](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
+
 ## SFTP
 
     sftp username@remote_hostname_or_IP:
