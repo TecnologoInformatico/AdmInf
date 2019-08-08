@@ -2,19 +2,16 @@
 
 Notas de Administración de infraestructuras.
 
-- [00 - Entorno](./secciones/00_Entorno.md)
-- [01 - Usuarios y Grupos](./secciones/01_usuarios_y_grupos.md)
-- [02 - GIT](./secciones/02_git.md)
-- [03 - Acceso Remoto](./secciones/03_acceso_remoto.md)
-- [04 - Tareas Programadas](./secciones/04_tareas_programadas.md)
-- [05 - Compresión y respaldos](./secciones/05_compresion.md)
-- [06 - Servidor web Apache](./secciones/06_servidores_web.md)
-- [07 - MySQL](./secciones/07_mysql.md)
-- [08 - PHP](./secciones/08_php.md)
-- [09 - systemctl](./secciones/09_systemctl.md)
-- [10 - DNS](./secciones/10_dns.md)
-- [11 - Logs](./secciones/11_logs.md)
-- [12 - ipconfig](./secciones/12_ipconfig.md)
+- [shell](./secciones/shell.md)
+- Editores de texto
+- Usuarios y grupos
+- Gestores de paquetes
+- Acceso Remoto
+- Compresión
+- Backup
+- Tareas programadas
+- Servicios
+- Logs
 
 ## 2019
 
@@ -37,22 +34,24 @@ Notas de Administración de infraestructuras.
 
 ### 1 - 06/08 y 08/08
 
-Entorno
-Ayuda
-git
+- shell
+  - Entorno
+  - Navegación
+  - Ayuda
+- git
 
 ### 2 - 13/08 y 15/08
 
 Editores de texto
-Usuarios_y_grupos
+Usuarios y grupos
 
 ### 3 - 20/08 y 22/08
 
-03_acceso_remoto.md
+03 acceso remoto.md
 
 ### 4 - 27/08 y 29/08
 
-0x_gestores_de_paquetes.md
+0x gestores de paquetes.md
 
 
 ### 5 - 03/09 y 12/09
@@ -61,7 +60,7 @@ compresion
 
 ### 6 - 10/09 y 19/09
 
-tareas_programadas
+tareas programadas
 
 ### 7 - 17/09 y 26/09
 
@@ -90,19 +89,23 @@ Su Mo Tu We Th Fr Sa    Su Mo Tu We Th Fr Sa
 
 ### 12  - 29/10 y 31/10
 
-
-06_servidores_web.md
-07_mysql.md
-08_php.md
-
-
-10_dns.md
-11_logs.md
-12_ipconfig.md
+- servidores web
+- mysql
+- php
+- dns
+- logs
+- ipconfig
   
 ## Enlaces
 
 - [ssh-keys](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2)
 - [ssh keys github](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)
 
- 
+## Créditos
+
+Material basado en fuentes de:
+
+- [GNU](https://www.gnu.org/)
+- [Digital Ocean](https://www.digitalocean.com)
+- [Arch linux wiki](https://wiki.archlinux.org)
+- [The Linux Command Line](http://linuxcommand.org/tlcl.php)
