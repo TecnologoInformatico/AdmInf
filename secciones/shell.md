@@ -1,6 +1,8 @@
 # Shell
 
-## Navegación y exploración del sistema
+
+
+## Navegacion y exploracion del sistema
 
 - `pwd` Imprime el directorio de trabajo actual.
 - `cd` Cambia de directorio.
@@ -75,3 +77,5 @@ En lugar de un archivo también admite la entrada estándar, por lo que es posib
 - `head`
 - `tail`
 - `tee`
+
+- [ea](##_Navegacion_y_exploracion_del_sistema)
