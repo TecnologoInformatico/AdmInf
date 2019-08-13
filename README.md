@@ -3,7 +3,6 @@
 Notas de Administración de infraestructuras.
 
 - [shell](./secciones/shell.md)
-- Editores de texto
 - Usuarios y grupos
 - Gestores de paquetes
 - Acceso Remoto
@@ -12,6 +11,9 @@ Notas de Administración de infraestructuras.
 - Tareas programadas
 - Servicios
 - Logs
+
+- [git](./secciones/git.md)
+- [Editores de texto](./secciones/editores_de_texto.md)
 
 ## 2019
 
@@ -47,25 +49,24 @@ Usuarios y grupos
 
 ### 3 - 20/08 y 22/08
 
-03 acceso remoto.md
+Acceso remoto
 
 ### 4 - 27/08 y 29/08
 
-0x gestores de paquetes.md
-
+Gestores de paquetes
 
 ### 5 - 03/09 y 12/09
 
-compresion
+Compresion
 
 ### 6 - 10/09 y 19/09
 
-tareas programadas
+Tareas programadas
 
 ### 7 - 17/09 y 26/09
 
-servicios
-logs
+Servicios
+Logs
 
 ## Segunda parte
 
