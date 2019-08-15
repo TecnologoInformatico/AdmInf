@@ -6,7 +6,7 @@ Git es un sistema de control de versiones distribuido libre, para manejar proyec
 
 Git tiene tres principales estados:
 
-- `modified`, hay cambios pero aún no están commiteados a la base de datos.
+- `modified`, hay cambcdios pero aún no están commiteados a la base de datos.
 - `staged`, archivos modificados marcados para ser incluidos en el próximo commit.
 - `commited`, datos guardados de forma segura en la base de datos local.
 
@@ -51,6 +51,20 @@ El flujo de trabajo básico en git es algo así:
 
 `git config --global user.name "nombre usuario"`
 `git config --global user.email "usuario@mail.com"`
+
+## Acciones útiles
+
+### untrack - Remover archivos "trackeados"
+
+`git rm -r --cached file`
+
+- `rm` comando para remover.
+- `-r` opción para hacerlo de forma recursiva.
+- `--cached` sólo remueve archivos del index. Los archivos aún seguiran existiendo.
+- `-n` la opción -n permite realizar un simulacro `--dry-run`.
+
+En caso de existir cambios en los archivos a remover se solicita utilizar la opción `--dry-run`
+para mantener los archivos, o `-f` para forzar la eliminación.
 
 ## Enlaces
 
