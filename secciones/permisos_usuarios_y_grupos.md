@@ -64,5 +64,3 @@ Sólo el propietario del archivo, o el superusuario son capaces de cambiar estos
 | 7     | 111     | rwx  |
 
 #### Representación simbólica
-
-
