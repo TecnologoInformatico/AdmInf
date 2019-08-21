@@ -26,15 +26,16 @@ En esta sección describa los pasos realizados para completar la tarea.
 
 2. 
 `echo "" > ~/sandbox/test.txt`
+`echo touch sandbox/test.txt`
 
 3. 
 `cd sandbox`
-`mkdir directorio_01`
-`mkdir directorio_02`
+`mkdir directorio_01 directorio_02`
 
 4. 
 `cd directorio_01`
 `for i in {01..10}; do touch archivo_$i; done;`
+`touch archivo_{01..10}`
 
 5. 
 `mv directorio_01 directorio_02`
