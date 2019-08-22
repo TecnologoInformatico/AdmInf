@@ -1,7 +1,7 @@
 # Permisos, usuarios y grupos
 
 - Permisos
-  - `id` Muestra la identidad del usuario
+  - [id](#id) Muestra la identidad del usuario
   - [chmod](#chmod) cambia el modo de un archivo (permisos)
   - `umask` Setea los permisos por defecto de los archivos
   - `sudo` Ejecuta un comando como otro usuario
@@ -10,15 +10,16 @@
 
 - Usuarios y grupos
   - `su` Inicia un shell como otro usuario
-  - `passwd` Cambia la contraseña de un usuario
-  - `useradd` Crea un usuario (bajo nivel)
-  - `adduser` Crea un usuario (de forma iterativa)
-  - `userdel` Elimina un usuario
-  - `usermod` Modifica un usuario
-  - `groupadd` Crea un grupo
-  - `groupdel` Elimina un grupo
-  - `groupmod` Modifica un grupo
-  - `users` Muestra los usuarios actualmente logueados.
+  - [users](#users) Cambia la contraseña de un usuario
+  - [passwd](#passwd) Cambia la contraseña de un usuario
+  - [useradd](#useradd) Crea un usuario (bajo nivel)
+  - [adduser](#adduser) Crea un usuario (de forma iterativa)
+  - [usermod](#usermod) Modifica un usuario
+  - [userdel](#userdel) Elimina un usuario
+  - [groupadd](#groupadd) Crea un grupo
+  - [groupmod](#groupmod) Modifica un grupo
+  - [groupdel](#groupdel) Elimina un grupo
+  - [users](#users) Muestra los usuarios actualmente logueados.
 
 ## Permisos
 
@@ -39,6 +40,11 @@ En la primer parte veremos el tipo de archivo:
 Los restantes 9 atributos son los permisos llamados `file mode`, representando
 la lectura `r`, escritura `w` y ejecución `x`, para el propietario del archivo `u`,
 el grupo del archivo `g` y para todos los demás `o`.
+
+## id
+
+Muestra la identidad del usuario.
+idu del usuario, id y grupo principal, y grupos secundarios.
 
 ### chmod
 
@@ -64,3 +70,87 @@ Sólo el propietario del archivo, o el superusuario son capaces de cambiar estos
 | 7     | 111     | rwx  |
 
 #### Representación simbólica
+
+Ej: `chmod u+x file.sh`
+
+## users
+
+Lista los usuarios actualmente logueados en el sistema.
+
+## passwd
+
+Modifica la contraseña de un usuario.
+
+### useradd
+
+    useradd [opciones] usuario
+
+Agrega un nuevo usuario al sistema
+
+opciones:
+
+- -d directorio home
+- -m crear directorio home si no existe
+- -p setear el password, no recomendado
+
+Ej:
+
+    useradd -d homeDir -m -p miPass peteco
+
+### adduser
+
+Agrega un usuario al sistema.
+
+### usermod
+
+    usermod [opciones] usuario
+
+Modifica los datos de un usuario (la información que se guarda en el archivo /etc/passwd)
+
+opciones:
+
+- -d Directorio home
+- -G Asigna grupos suplementarios. 
+- -a Se utiliza para agregar los grupos suplementarios sin eliminar los que tiene.
+
+Ejemplo:
+
+    usermod -d petecoHome -G miGrupo,admin,grupoX -a peteco
+
+### userdel
+
+    userdel [opciones] usuario
+
+Elimina el usuario indicado.
+
+Opciones:
+
+- -r remueve los archivos del usuario así como el directorio home.
+
+Ejemplo:
+
+    userdel -r peteco
+
+## groupadd
+
+    groupadd [opciones] grupo
+
+Agrega un nuevo grupo al sistema
+
+Ejemplo:
+
+    groupadd grupoX
+
+## groupmod
+
+Modifica la definición de un grupo en el sistema.
+
+## groupdel
+
+    groupdel grupo
+
+Elimina el grupo indicado.
+
+Ejemplo:
+
+    groupdel grupoX

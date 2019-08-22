@@ -40,33 +40,35 @@ Notas de Administración de infraestructuras.
   - Entorno
   - Navegación
   - Ayuda
-- git
 
 ### 2 - 13/08 y 15/08
 
-Editores de texto
-Usuarios y grupos
+- git
 
 ### 3 - 20/08 y 22/08
 
-Acceso remoto
+Editores de texto
+Permisos, usuarios y grupos
 
 ### 4 - 27/08 y 29/08
 
+Acceso remoto
 Gestores de paquetes
 
 ### 5 - 03/09 y 12/09
 
 Compresion
 
-### 6 - 10/09 y 19/09
+### 6 - 10/09 y 12/09
 
 Tareas programadas
 
-### 7 - 17/09 y 26/09
+### 7 - 17/09 y 19/09
 
 Servicios
 Logs
+
+### 8 - 23/09 al 27/09 primer parcial
 
 ## Segunda parte
 
