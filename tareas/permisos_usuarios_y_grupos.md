@@ -55,3 +55,26 @@ compartido. Ingrese con otro usuario del mismo grupo e intente modificarlo. ¿Pu
 ¿Por qué? Investigue y modifique lo que sea necesario para que ambos usuarios puedan modificar el archivo.
 6. Cambie los permisos del archivo para que el usuario creado en la parte 1.2 también
 pueda modificar el archivo y verifique los cambios realizados.
+
+
+====Permisios usuarios y grupos
+1 sudo adduser EdWardRodriguez
+sudo passwd OctavioSepergo
+sudo add user OctavioSepergo
+
+2 sudo Groupadd Musica
+sudo chgrp Musica EdwardRodriguez
+sudo chgrp Musica OctavioSepergo
+sudo usermod OctavioSepergo -G Musica
+
+3 sudo mkdir /usr/local/share/Music
+
+4- sudo groupmod Musica -n musica
+
+5 sudo chmod g-rwx /usr/local/share/Music
+
+6 umask -S 0002
+
+7 sudo chmod g+s /usr/local/share/Music
+
+8

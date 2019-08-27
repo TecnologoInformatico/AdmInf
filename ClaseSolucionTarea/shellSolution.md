@@ -21,41 +21,55 @@
 
 En esta sección describa los pasos realizados para completar la tarea.
 
-1. `mkdir ~/sandbox`
-2. Creación del archivo `test.txt`
+1. 
+`mkdir sandbox`
 
-- `touch ~/sandbox/test.txt`
-- ...
+2. 
+`echo "" > ~/sandbox/test.txt`
+`echo touch sandbox/test.txt`
 
-3. ...
-	cd sandbox
-	mkdir -f diectorio01/directorio03
-	
-4 touch archivo_{01..10}
+3. 
+`cd sandbox`
+`mkdir directorio_01 directorio_02`
 
-5	no permoe hacerlo ya que un directorio exterior puede contenerse 
-dentro de si
+4. 
+`cd directorio_01`
+`for i in {01..10}; do touch archivo_$i; done;`
+`touch archivo_{01..10}`
 
-6 mkdir directorio01 directorio03
-El directorio 01 es renombrado como directorio 03
-
-7 mkdir dirctorio03 directori01
-
-8 ln -l directorio02/archivo_10 archivo_X
-
-9 ll >> directorio02/archivo_10
-
-10 ln -s ~/sandbox directorio02/archivo_01
+5. 
+`mv directorio_01 directorio_02`
 
 
-11 touch raiz 
- ll ~/ >> /sandbox/directorio01/directorio02/raiz
+6. 
+`mv directorio_02 directorio_03`
+Como `directorio_03` no existe, no puede colocar `directorio_01` dentro de `directorio_03`, por ello, el efecto del comando es de renombrar la carpeta.
 
-12 touch home sandbox
-ll ./Tecnologo >> ./samdbox/home
 
-ll./Tecnologo/sandbox >> ./sandbox/sandbox 
+7. 
+`mv directorio_03 directorio_02`
 
-13
-Si se elimina el directorio y los archivos queda el hard link guardado 
+8. 
+`ln directorio_01/archivo_10 directorio_02/archivo_x`
+
+9. 
+`ls directorio_02 >> directorio_01/archivo_10`
+
+10. 
+`ln -s directorio_01/archivo_01 archivo`
+
+11. 
+`ls / > directorio_02/raiz`
+
+12. 
+`ls ~ > directorio_02/home `
+`ls -R > directorio_02/sandbox`
+
+13. 
+`rm -R directorio_01`
+El archivo y su contenido permanecen intactos.
+
+14. 
+`history > historial`
+
 
