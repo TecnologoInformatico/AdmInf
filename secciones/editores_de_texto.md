@@ -146,3 +146,11 @@ Donde
 - `s` La operación a realizar, en este caso sustitución.
 - `/Texto/texto2/` El patrón de busqueda y sustitución.
 - `g` global, en el sentido de que se realizará para todas las apariciones, si se omite se realiza sólo para la primer aparición. Agregando una `c` se puede realizar una confirmación antes de cada sustitución.
+
+## Enlaces
+
+- [tutorial - Vim Genius](http://vimgenius.com/)
+- [tutorial - Open vim](https://www.openvim.com/)
+- [juego - PacVim (GitHub Project)](https://github.com/jmoon018/PacVim)
+- [juego - vim adventures](https://vim-adventures.com/)
+
