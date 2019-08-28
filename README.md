@@ -4,7 +4,7 @@ Notas de Administración de infraestructuras.
 
 - [shell](./secciones/shell.md)
 - [Permisos, usuarios y grupos](./secciones/permisos_usuarios_y_agrupos.md)
-- Gestores de paquetes
+- [Gestores de paquetes](./secciones/gestores_de_paquetes.md)
 - [Acceso Remoto](./secciones/acceso_remoto.md)
 - Compresión
 - Backup
