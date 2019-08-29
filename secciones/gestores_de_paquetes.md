@@ -9,3 +9,7 @@
 ### upgrade
 
 ### install
+
+## Enlaces
+
+- [The Debian GNU/Linux FAQ package management](http://www.debian.org/doc/FAQ/ch-pkgtools.en.html)
