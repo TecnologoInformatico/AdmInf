@@ -54,21 +54,18 @@ Tambien podemos encontrar WinSCP como cliente SCP, FreeSSHD como Cliente SSH y S
 
 ## Remmina
 
-Funciona con RDP, VNC y SSH
+Programa de acceso remoto a entorno gráfico funciona con RDP, VNC y SSH
 
-Como instalamos Remmina?
--abrimos una consola y agregamos el repositorio en nuestro Linux Ubuntu:
-	sudo apt-add-repository ppa:remmina-ppa-team/remmiona-next
+¿Cómo instalar Remmina?
+
+Agregamos el repositorio en nuestro equipo:
+
+`sudo apt-add-repository ppa:remmina-ppa-team/remmiona-next`
 
 -actualizamos e instalamos la aplicacion:
-	sudo apt update
-	sudo apt install remmina remmina-plugin.rdp libfreerdp.plugins-standard
 
--ejecutamos Remmina.
--ingresamos una ip de un ordenador y ponemos conexion rapida.
--se abrira otra ventana con la conexion al equipo donde nos loguearemos con
-una cuenta existente.
--ya tendremos acceso a ese equipo.
+`sudo apt update`
+`sudo apt install remmina remmina-plugin.rdp libfreerdp.plugins-standard`
 
 ## Remote Dekstop
 
@@ -77,3 +74,8 @@ Remote Desktop Protocol (RDP) es un protocolo propietario desarrollado por
  una terminal (mostrando la información procesada que recibe del servidor) y
  un servidor Windows (recibiendo la información dada por el usuario
  en el terminal mediante el ratón ó el teclado).
+
+## Enlaces
+
+- [Configurar ssh con par de claves](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
+- [ssh - public key](https://kb.iu.edu/d/aews)
