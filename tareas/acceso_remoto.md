@@ -17,3 +17,30 @@ Además, en muchos casos se dispone de máquinas sin dispositivos de E/S más qu
 9. Vaya a la linea 15 y copiela.
 10. Muevase hasta la última linea y pege lo copiado en la linea anterior.
 11. Salga de la sesión remota y mediante sftp baje el archivo `test_ssh` al equipo local como `test_sftp`.
+
+1 sudo apt-get install ssh
+
+2 sudo /etc/init.d/ssh start -> iniciar el servidor shh
+
+  sudo /etc/init.d/ssh stop -> detiene el servidor ssh 
+
+  ssh-keygen 
+
+4 touch test_ssh
+ put test_ssh
+
+5 ls /bin >> test_ssh
+
+6 sudo apt-get install vim
+
+7 vim test_shh 
+
+ /less para buscar el arhivo particular
+
+8 dG borra del cuersor al final de la linea
+
+9 15G and yy
+
+10 G and p 
+
+11 get test_sftp
