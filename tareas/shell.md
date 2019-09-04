@@ -107,4 +107,8 @@ ll./Tecnologo/sandbox >> ./sandbox/sandbox
 Si se elimina el directorio y los archivos queda el hard link guardado 
 
 =======
+<<<<<<< HEAD
 >>>>>>> 36b3bd0faf6a4f7b5340519fb4ae15f1d0eea3a4
+=======
+>>>>>>> 383612972ea5b3f6b558b00ca38d1609221adbad
+>>>>>>> 66253603cf0e8c4ce967bd890b8921dd88de6b5c

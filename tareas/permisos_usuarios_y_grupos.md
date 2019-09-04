@@ -78,3 +78,85 @@ sudo usermod OctavioSepergo -G Musica
 7 sudo chmod g+s /usr/local/share/Music
 
 8
+
+=============================================================================
+
+El comando sudo puede realizar las siguientes operaciones 
+
+sudo -A	--askpass
+Normalmente si sudoRequiere una contraseá, la leera desde el terminal del usuario. Si se 
+especificar la opcion- A(askpass), se ejecutar un programa auxiliar (Posible grafico)
+para leer la contraseña del usuario y enviar la contraseña a la salida estandar.Si se establece 
+la SUDO_ASKPASS variable de rentorno, especifica la ruta al prograna auxiliar. De lo contrario, 
+si sudo.conf (5) contiene una linea de especifica el programa askpass, se usara ese valor: por 
+ejemplo:
+
+#Ruta al programa de ayuda askpass
+Ruta askpass / usr/ x11r6/BIN /ssh-askpass
+
+si no hay un programa asjpass disponible, sudosaldra con un error 
+
+sudo -a tipo, --auth-type = tipo
+utilice el tipo de autenticacion BSD espesificado al validar al usuario. si lo permite 
+/etc/login.conf. El administrador del sistema puede especificar una lista de metodos de 
+autenticacion especificoos de sudo agregando una entrada "auth-sudo" en /etc/login.comf. Esta 
+opcion solo esta disponible en sistemas que admiten la autnticacion BSD
+
+sudo -b, --Background 
+Ejecute el comando dado en segundo plano. Tenga en cuenta que no es posible utuluzar el control 
+de trabajo de shell para manipular procesos en segundo plano iniciados para sudo. La mayoria de 
+los comandos interactivos no funcionaran corrctamente en modo de fondo.
+
+sudo -C num, --close-from=num
+cierre todos los descriptores de archivo mayores o iguales que num antes de ejecutar un 
+comando. No se permiten valores inferiores a tres. Por defecto sudo cerrara todos los 
+descriptores de archivos abiertos que no sean estrada estandar, salida estandar y error 
+estandar al ejecutar un comando. L politica de seguridad puede restringir la capacidad de 
+usuario para usar esta opcion. La politica de sudoers solo permte el uso de la -C opcion cuando 
+el administrador ha habilitado la opcion closeform_override.
+
+-c clase, --login-class= clase
+Ejecute el comando con limites de recirsos y prioridad de programacion de la clase de inicio de 
+secion especificada. El argumento de clase puede ser un nombre. El argumento de clase puede ser 
+un nombre de clase como se define en /etc/login.conf, o un solo caracter '-' Si las clase es -, 
+se usara la clase de inicio de sesion predeterminada del usuario objetivo.De lo contrario, el 
+comando debe ejecutarse como superusuario.Si el comando se ejecuta como un shell de inicio de 
+secion predeterminada del usuario objetivo De lo contrario, el comando debe ejecutarse como 
+superusuario(ID de usuario 0), i sudo debe ejecutarse desde un shell que ya se esta ehecutando 
+coo superusuario. Si el comando se ejecuta como un chell de inicio de sesion, adicional 
+/etc/login.confse apicaran configuracuibes, como las cariables umask y de entorno si estan 
+presentes.Esta opcion solo esta disponible en sistemas con clases de inicio de secion BSP.
+
+-E, --preserve-env
+indica a la politica de seguridad que el usuario desdea preservar sus variables de entorno 
+existentes.La politica de seguridad puede devolver un error si el usuario no tiene permiso para 
+preservar el entorno.
+
+-e, --edit
+Edite uno o mas archivos en lugar de ejecutar un comando. en lugar de un nombre de ruta, la 
+cadena "sudoedit" se usa cuando se consulta la politica de seguridad. Si el usuario esta 
+utilizado por la politica, se toma los siguintes pasos:
+
+1. Se hacen copas temporales de los archivos que se editaran con el propietario configurado 
+para el usuario que invoca.
+
+2.El editor especificado por la politica se ejecuta para editar los archivos temporales. el 
+Sudoers politica utiliza los SUDO_Editor, VISUAL Y Editor las variables de entoro (en ese 
+orden). Si ninguno de SUDO_EDITOR, VISUAL o EDITOR estan configurados, se utiliza el promer 
+programa listado en la opcion sudoers del editor (5).
+
+3. Si se las modificado, los archivos tmporales se vuelven a copiar en su ubicacion origial y 
+se eliminan las versiones temporales.
+
+Si el archivo especificado no existe, se creara. Tenga en cuenta que , a diferencia de la 
+mayoria de los comandos ejecutados por sudo, el editor se ejecuta sin modificar eel entorno 
+del usuario que invoca. Si por alguna razon sudo no puede actualizar un archivo con su versin 
+editada, el usuario recivira una advertencia y la copia editada permanecera en un archivo 
+temporal.
+
+-g group, --group=gropo
+
+Ejcute el comando con el grupo primario estableciden grupo en lugar del grupo prmario 
+especifcado por laentrada de la bas de datos e contraseña del usuario objetivo. El grupo puede 
+ser un nombre de grupo o un ID de grupo numerico(GID) prefijado con el caracter '#'(por 
+ejemplo, #0 para GID 0)

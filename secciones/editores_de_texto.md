@@ -147,8 +147,24 @@ Donde
 - `/Texto/texto2/` El patrón de busqueda y sustitución.
 - `g` global, en el sentido de que se realizará para todas las apariciones, si se omite se realiza sólo para la primer aparición. Agregando una `c` se puede realizar una confirmación antes de cada sustitución.
 
+## Configuración
+
+Archivo vimr
+
+El archivo vimrc contiene configuración que se carga al momento de iniciar vim. En sistemas tipo Unix este archivo se llama .vimrc, mientras que en Windows _vimrc.
+
+Se puede customizar vim colocando comandos en dicho archivo.
+
+Ejemplo: `:set number`
+
+Las lineas que comienzan con " son un comentario y no son leidas por vim.
+
+Se puede buscar otros ejemplos en el archivo vimrc_example.vim. 
+También puede consultar el comando de ayuda `:help vimrc-intro` o  `:help vimrc_example.vim`.
+
 ## Enlaces
 
+- [configuracion](https://vim.fandom.com/wiki/Open_vimrc_file)
 - [tutorial - Vim Genius](http://vimgenius.com/)
 - [tutorial - Open vim](https://www.openvim.com/)
 - [juego - PacVim (GitHub Project)](https://github.com/jmoon018/PacVim)
