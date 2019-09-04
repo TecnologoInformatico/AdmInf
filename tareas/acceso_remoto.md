@@ -22,13 +22,15 @@ sudo apt-get install ssh
 
 sudo apt-get install openshh-server
 
+ssh-keygen
+
 2. sudo /etc/init.d/ssh start
 
 3. ssh Alex@ipadress 
 
 4. touch ~/test_ssh
 
-5. ls > /bin/tes_ssh
+5. ls >> /bin/tes_ssh
 
 6. sudo apt-get install vim
 
@@ -40,10 +42,11 @@ sudo apt-get install openshh-server
 
 10.G and p
 
-11 control + D
+11 control + D Desconnectar ssh
 
 12 stfp usuario@ipadress
 
 13. get test_ssh test_sftp
 
 
+1

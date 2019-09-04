@@ -11,3 +11,18 @@
   en `~/bak/compresion`
 9. Realice una modificación al archivo `~/repo/compresion/README.md` y vuelva realizar el paso 7.
 10. Investigue como evitar que se sincronicen los archivos correspondientes a git.
+
+
+1. mkdir -p ~/repo/compresion
+2. git clone https://github.com/AlexZimmerBojourAdrian/LosDelFondo.git
+3.tar -cf ~/bak/repo_bak_01.tar LosDelFondo
+ tar -czf ~/bak/repo_bak_02.gzip LosDelFondo
+4.shh alex@192.168.56.101
+5. get repo_bak_01.tar
+get repo_back_02.gzip
+6. tar -xf repo_bak_01.tar
+tar -xf repo_bak_02.gzip
+7
+
+
+
