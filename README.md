@@ -6,7 +6,7 @@ Notas de Administración de infraestructuras.
 - [Permisos, usuarios y grupos](./secciones/permisos_usuarios_y_agrupos.md)
 - [Gestores de paquetes](./secciones/gestores_de_paquetes.md)
 - [Acceso Remoto](./secciones/acceso_remoto.md)
-- Compresión
+- [Compresión](./secciones/compresion.md)
 - Backup
 - Tareas programadas
 - Servicios
@@ -14,6 +14,7 @@ Notas de Administración de infraestructuras.
 
 - [git](./secciones/git.md)
 - [Editores de texto](./secciones/editores_de_texto.md)
+- [rsync](./secciones/rsync.md)
 
 ## 2019
 
@@ -58,6 +59,7 @@ Gestores de paquetes
 ### 5 - 03/09 y 12/09
 
 Compresion
+rsync
 
 ### 6 - 10/09 y 12/09
 
