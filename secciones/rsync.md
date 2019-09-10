@@ -3,7 +3,7 @@
 Este comando sincroniza tanto directorios como archivos de un lugar a otro, el mismo tiene 2 parametros obligatorios para su utilización. [documentación](https://rsync.samba.org/)
 
 ```s
-rsync ruta/directorio/a/respaldar ruta/respaldo
+rsync ruta/directorio/a/respaldar usuario@host:ruta/respaldo
 ```
 
 - `-z` Activa la compresión del archivo respaldado.
