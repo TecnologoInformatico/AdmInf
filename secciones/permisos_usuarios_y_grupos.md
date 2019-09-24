@@ -10,7 +10,6 @@
 
 - Usuarios y grupos
   - `su` Inicia un shell como otro usuario
-  - [users](#users) Cambia la contraseña de un usuario
   - [passwd](#passwd) Cambia la contraseña de un usuario
   - [useradd](#useradd) Crea un usuario (bajo nivel)
   - [adduser](#adduser) Crea un usuario (de forma iterativa)
