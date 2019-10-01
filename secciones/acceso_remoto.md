@@ -79,3 +79,4 @@ Remote Desktop Protocol (RDP) es un protocolo propietario desarrollado por
 
 - [Configurar ssh con par de claves](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
 - [ssh - public key](https://kb.iu.edu/d/aews)
+- [Acceso remoto de windows a linux](https://www.dedoimedo.com/computers/remote-windows-linux.html)
