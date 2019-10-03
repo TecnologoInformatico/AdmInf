@@ -74,6 +74,90 @@ En caso de no tener una terminal asociada se muestra un `?`.
 - **RSS** Uso de memoria RAM en kilobytes.
 - **START** Tiempo desde que el proceso comenzó, para valores mayores a un día se utilza la fecha.
 
+### top
+
+Vista dinámica de procesos.
+
+El programa top se actualiza constantemente, por defecto cada 3 segundos, mostrando los procesos en orden de actividad.
+
+### pstree
+
+Muestra los procesos en forma de árbol, permitiendo visualizar las relaciones y dependencias.
+
+### jobs
+
+Permite ver los procesos que hay corriendo en segundo plano en la terminal actual.
+Es posible interactuar con los procesos mediante el número de trabajo.
+Por ejemplo, para traer al frente a un proceso es posible mediante `fg %2` tal que el 2 es el número de trabajo.
+
+## Controlando los procesos
+
+Interrumpir un proceso Ctrl+C
+Poner en pausa un proceso Ctrl+Z
+Correr en segundo plano `programa &` correr un con `&` al final del comando.
+
+### señales
+
+#### 1 HUP
+
+Señal legada del tiempo de las terminales para recargar la configuración.
+Algunos demonios aún la utilizan actualmente.
+
+#### 2 INT
+
+Interrumpir, misma señal que la enviada mediante Ctrl+C.
+El programa puede realizar alguna acción antes de finalizar.
+
+#### 3 QUIT
+
+Salir.
+
+#### 9 KILL
+
+Un programa puede decidir ignorar la mayoría de las señales que se le envían.
+Esta funciona de un modo diferente, ya que en lugar de enviarle la señal al proceso
+se le envía al kernel, haciendo imposible que se ignore. No deja opción al proceso, para
+que limpie-guarde su trabajo actual, por lo que debe ser utilizada como último recurso.
+
+#### 11 SEGV
+
+Violación del segmento de memoria.
+Se envía la señal en caso de que el proceso realice un acceso a memoria no permitido.
+
+#### 15 TERM
+
+Es la señal enviada por defecto y si un proceso es capáz de reaccionar mediante esta señal finalizará.
+
+#### 18 CONT
+
+Continuar. Restablece un proceso pausado.
+
+#### 19 STOP
+
+Pausa el proceso sin terminarlo.
+Al igual que la señal KILL es enviada al kernel y no al proceso, por lo que el proceso
+no puede ignorarla.
+
+#### 20 TSTP
+
+Terminal Stop, Se envia al precionar Ctrl+Z.
+La señal es recibida por el proceso y puede ser ignorada.
+
+### killall
+
+Envía señales a multiples procesos, mediante un nombre.
+
+## Carga del sistema
+
+### vmstat
+
+Muestra una captura de la carga del sistema, memoria, swap y lectura de disco.
+Para hacerlo de un modo dinámico es posible pasarle un tiempo de actualización como argumento.
+
+### tload y xload
+
+Programas de consola y de interfáz gráfica respectivamente, para visualizar la carga del sistema en forma de gráfica.
+
 ## Enlaces
 
 - [Debian, system initialization](https://www.debian.org/doc/manuals/debian-reference/ch03.en.html)
