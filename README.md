@@ -7,8 +7,7 @@ Notas de Administración de infraestructuras.
 - [Gestores de paquetes](./secciones/gestores_de_paquetes.md)
 - [Acceso Remoto](./secciones/acceso_remoto.md)
 - [Compresión](./secciones/compresion.md)
-- Backup
-- Tareas programadas
+- [Tareas programadas](./secciones/tareas_programadas.md)
 - Servicios
 - Logs
 
