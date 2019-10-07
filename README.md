@@ -3,6 +3,7 @@
 Notas de Administración de infraestructuras.
 
 - [shell](./secciones/shell.md)
+- [variables de entorno](./secciones/variables_de_entorno.md)
 - [Permisos, usuarios y grupos](./secciones/permisos_usuarios_y_agrupos.md)
 - [Gestores de paquetes](./secciones/gestores_de_paquetes.md)
 - [Acceso Remoto](./secciones/acceso_remoto.md)
@@ -10,6 +11,7 @@ Notas de Administración de infraestructuras.
 - [Tareas programadas](./secciones/tareas_programadas.md)
 - [Procesos y servicios](./secciones/procesos_y_servicios.md)
 - Logs
+- [tomcat](./secciones/tomcat.md)
 
 - [git](./secciones/git.md)
 - [Editores de texto](./secciones/editores_de_texto.md)
