@@ -13,5 +13,8 @@
 8. Brindele lectura a todo dentro de el directorio `conf`.
 9. Ejecución al directorio `conf`.
 10. Setee el usuario `tomcat` como propietario de los directorios, `webapps`, `work`, `temp`, y `logs`, y todo su contenido.
-11. Investigue como setear el usuario y contraseña de un usuario administrador.
-12. Agregue un archivo war al servidor.
+11. Agregue las variables de entorno: `JAVA_HOME`, `CATALINA_HOME`
+12. Cree un soft link de `$CATALINA_HOME/bin/catalina.sh` en `/etc/init.d/`.
+13. Investigue como setear el usuario y contraseña de un usuario administrador.
+14. Agregue un archivo war al servidor y desplieguelo.
+15. Acceda al sitio desde el navegador del anfitrion.
