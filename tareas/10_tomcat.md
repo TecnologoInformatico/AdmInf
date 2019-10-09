@@ -19,6 +19,7 @@
 14. Agregue un archivo war al servidor y desplieguelo.
 15. Acceda al sitio desde el navegador del anfitrion.
 
+<<<<<<< HEAD
 1  `sudo apt-get install default-jdk`
 
 mkdir -p /opt/tomcat
@@ -37,3 +38,13 @@ mkdir -p /opt/tomcat
 
 
  
+=======
+
+1. sudo apt-get install default-jdk
+2. sudo addgroup tomcat
+3. mkdir -p ./opt/tomcat 
+3.sudo useradd tomcat -d /opt/tomcat -g tomcat
+4.sudo curl -O https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.46/bin/apache-tomcat-8.5.46.tar 
+5. mkdir -p /opt/tomcat
+6. sudo tar xzvf apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1
+>>>>>>> 0a5c62b654fbdfe5543ad8391e11f74df52ff6a1
