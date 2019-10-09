@@ -18,3 +18,22 @@
 13. Investigue como setear el usuario y contraseña de un usuario administrador.
 14. Agregue un archivo war al servidor y desplieguelo.
 15. Acceda al sitio desde el navegador del anfitrion.
+
+1  `sudo apt-get install default-jdk`
+
+mkdir -p /opt/tomcat
+
+2 sudo addgroup tomcat
+
+3 sudo useradd -d /opt/tomcat -g tomcat tomcat ->le asigna el directorio home de una
+
+4. `curl -O https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.46/bin/apache-tomcat-8.5.46.tar.gz` -> estando en tmp
+
+5  usermod -d /opt/tomcat tomcat
+
+6 tar -xf (name tar)
+
+7 sudo chown -R :tomcat /opt/tomcat
+
+
+ 
