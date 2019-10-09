@@ -19,7 +19,7 @@
 14. Agregue un archivo war al servidor y desplieguelo.
 15. Acceda al sitio desde el navegador del anfitrion.
 
-<<<<<<< HEAD
+<<<<nan<<< HEAD
 1  `sudo apt-get install default-jdk`
 
 mkdir -p /opt/tomcat
@@ -33,11 +33,34 @@ mkdir -p /opt/tomcat
 5  usermod -d /opt/tomcat tomcat
 
 6 tar -xf (name tar)
+sudo tar xzvf apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1
 
 7 sudo chown -R :tomcat /opt/tomcat
 
+8. sudo tar xzvf apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1
 
- 
+8 y 9 sudo chmod g+xrs conf
+
+10. sudo chown -R tomcat: webapps
+ sudo chown -R tomcat: work
+sudo chown -R tomcat: temp
+sudo chown -R tomcat: logs
+
+11. sudo nano/etc/environments
+
+11 JAVA_HOME="/usr/bin/java"
+
+11 CATALINA_HOME="/opt/tomcat"
+
+12. sudo ln -s $CATALINA_HOME/bin/catalina.sh /etc/init.d/
+
+sudo ln -s $CATALINA_HOME"/bin/catalina.sh" /etc/init.d/tomcat
+
+sudo /etc/init.d/tomcat start
+
+13.
+
+15 http://localhost:8080 
 =======
 
 1. sudo apt-get install default-jdk
