@@ -27,3 +27,4 @@
 4.sudo curl -O https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.46/bin/apache-tomcat-8.5.46.tar 
 5. mkdir -p /opt/tomcat
 6. sudo tar xzvf apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1
+7.
