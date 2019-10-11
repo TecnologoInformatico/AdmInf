@@ -12,6 +12,7 @@ Notas de Administración de infraestructuras.
 - [Procesos y servicios](./secciones/procesos_y_servicios.md)
 - Logs
 - [tomcat](./secciones/tomcat.md)
+- [apache](./secciones/apache.md)
 
 - [git](./secciones/git.md)
 - [Editores de texto](./secciones/editores_de_texto.md)
