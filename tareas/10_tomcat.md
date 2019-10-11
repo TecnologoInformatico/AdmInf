@@ -19,6 +19,49 @@
 14. Agregue un archivo war al servidor y desplieguelo.
 15. Acceda al sitio desde el navegador del anfitrion.
 
+<<<<nan<<< HEAD
+1  `sudo apt-get install default-jdk`
+
+mkdir -p /opt/tomcat
+
+2 sudo addgroup tomcat
+
+3 sudo useradd -d /opt/tomcat -g tomcat tomcat ->le asigna el directorio home de una
+
+4. `curl -O https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.46/bin/apache-tomcat-8.5.46.tar.gz` -> estando en tmp
+
+5  usermod -d /opt/tomcat tomcat
+
+6 tar -xf (name tar)
+sudo tar xzvf apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1
+
+7 sudo chown -R :tomcat /opt/tomcat
+
+8. sudo tar xzvf apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1
+
+8 y 9 sudo chmod g+xrs conf
+
+10. sudo chown -R tomcat: webapps
+ sudo chown -R tomcat: work
+sudo chown -R tomcat: temp
+sudo chown -R tomcat: logs
+
+11. sudo nano/etc/environments
+
+11 JAVA_HOME="/usr/bin/java"
+
+11 CATALINA_HOME="/opt/tomcat"
+
+12. sudo ln -s $CATALINA_HOME/bin/catalina.sh /etc/init.d/
+
+sudo ln -s $CATALINA_HOME"/bin/catalina.sh" /etc/init.d/tomcat
+
+sudo /etc/init.d/tomcat start
+
+13.
+
+15 http://localhost:8080 
+=======
 
 1. sudo apt-get install default-jdk
 2. sudo addgroup tomcat
@@ -27,4 +70,8 @@
 4.sudo curl -O https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.46/bin/apache-tomcat-8.5.46.tar 
 5. mkdir -p /opt/tomcat
 6. sudo tar xzvf apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1
+<<<<<<< HEAD
 7.
+=======
+>>>>>>> 0a5c62b654fbdfe5543ad8391e11f74df52ff6a1
+>>>>>>> 417ddccf1945470d9f5ef893535901f2d4b78dcb
