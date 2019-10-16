@@ -4,6 +4,10 @@
 
 Linux Filesystem Hierarchy Standard
 
+para obtener información de su distribución lea la pagina del manual `hier`.
+
+`man hier`
+
 | Directorio      |                                     |
 |-----------------|-------------------------------------|
 | /               |                                     |
