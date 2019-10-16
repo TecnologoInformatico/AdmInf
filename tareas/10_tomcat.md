@@ -62,9 +62,25 @@ sudo ln -s $CATALINA_HOME"/bin/catalina.sh" /etc/init.d/tomcat
 
 sudo /etc/init.d/tomcat start
 
-13.
+13. 
 
 15 http://localhost:8080 
+
+service (name service) status
+
+samp stack de servidores
+
+apache para php y java
+
+mysql mariaDV
+
+php inteprete del servidor
+
+backend php genera las paginas de forma dinamica similar como las jsp 
+
+freamwork
+
+
 =======
 
 1. sudo apt-get install default-jdk

@@ -15,3 +15,15 @@ repositorio: `https://github.com/TecnologoInformatico/AdmInf-web.git`
 8. Reinicie el servidor apache para que los cambios tengan efecto.
 9. Utilice el comando rsync para sincronizar los directorios ~/repositorios/AdmInf-web con /var/www/adminf, de tal modo que el contenido del repositorio antes clonado se encuentre en el root de la aplicación.
 10. Verifique que el servidor funcione correctamente.
+
+3 sudo apt-get install apache2
+4 sudo mkdir -p /var/www/adminf
+5 sudo chown alex: /var/www/adminf
+6 cd /etc/apache/sites-aviables
+ cp 000-default.conf admin.local.conf
+ rempace server Admin tu alex@alex-virtualbox
+ y remplazar documentRoot /var/www/adminf
+7.modifique el autor /etc/hosts sudo nano hosts
+8.sudo /etc/init.d/apache2 restart
+9.sudo rsync -ab /home/alex/sandbox/apache/AdmInf-web /var/www/adminf  -> Revisar este punto
+10.entrar en un navegador 127.0.1.1
