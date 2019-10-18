@@ -25,5 +25,15 @@ repositorio: `https://github.com/TecnologoInformatico/AdmInf-web.git`
  y remplazar documentRoot /var/www/adminf
 7.modifique el autor /etc/hosts sudo nano hosts
 8.sudo /etc/init.d/apache2 restart
-9.sudo rsync -ab /home/alex/sandbox/apache/AdmInf-web /var/www/adminf  -> Revisar este punto
+9. rsync -av /home/alex/sandbox/apache/AdmInf-web /var/www/adminf  -> Revisar este punto
+9.sudo a2ensite admin.local.conf ->para habilitar la pagina  /etc/apache/sites-available
 10.entrar en un navegador 127.0.1.1
+
+
+en el archivo admin.local.conf
+
+ServerName www.adminf.local
+ServerAlias adminf.local
+DocumentRoot /var/www/adminf
+
+poner eso.
