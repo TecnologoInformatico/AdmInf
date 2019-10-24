@@ -50,6 +50,24 @@ Contiene el certificado auto firmado de la CA.
 
 En este caso basta con importar los certificados y claves en las carpetas correspondientes.
 
+## OpenSSL
+
+Openssl es un conjunto de herramientas que permiten una completa gestión de certificados. Para manipular certificados tenemos el comando openssl , que admite una gran variedad de modalidades distintas, entre ellas:
+
+- `ca`: Gestión de una autoridad certificadora (CA).
+- `crl`: Gestión de revocación de certificados CLR (Certificate Revocation List).
+- `crl2pkcs7`: Conversiones de CRL a PKCS#7.
+- `passwd`: Generación de contraseñas.
+- `pkcs12`: Gestión de certificados PKCS#12.
+- `pkcs7`: Gestión de certificados PKCS#7.
+- `req`: Gestión de solicitudes de certificados X.509 (Certificate Signing Request, CSR).
+- `rsa`: Gestión de llaves RSA.
+- `x509`: Gestión de certifcados de tipo X.509.
+
+El archivo de configuración suele encontrarse en el directorio `/etc/ssl/` con el nombre `openssl.cnf`, y en el se especifica donde se almacenan las claves y los certificados, además de otra configuración de la herramienta.
+
+En la misma ubicación se suele encontrar una carpeta `private` la cual contiene la clave del servidor, otra `certs` que contiene certificados conocidos y de confianza y otra `newcerts` que contiene una copia de cada certificado que firma la CA.
+
 ## Enlaces
 
 - [PKI - wikipedia](http://es.wikipedia.org/wiki/PKI#Componentes)
