@@ -15,7 +15,5 @@ Se busca completar el stack LAMP con la instalación de MySQL y PHP en nuestro s
 5. Instale phpMyAdmin
   `sudo apt-get install phpmyadmin`
 
-acceder al archivo donde se ubica el /var/www/Adminf/AdmInf-web
-sudo touch info.php
-sudo nano touch info.php <?php phpinfo(); ?>
 
+3 acceder a /www/
