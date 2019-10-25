@@ -9,7 +9,7 @@ La versión al momento (10-2019) es TLS 1.3, definida en el RFC 8446.
 1. Verifique que tenga instalado tanto apache2 como openssl. En caso de no contar con estas herramientas instalelas.
 2. Cree el directorio `/etc/ssl/localcerts` en caso de que no exista.
 3. Crear un certificado autofirmado con una validez de 30 días.
-  `openssl req -new -x509 -days 30 -nodes -out /etc/ssl/local\certs/apache.pem -keyout /etc/ssl/localcerts/apache.key`
+  `openssl req -new -x509 -days 30 -nodes -out /etc/ssl/localcerts/apache.pem -keyout /etc/ssl/localcerts/apache.key`
 4. Modifique los permisos de las claves para que sólo el propio usuario root cuente con escritura y lectura.
 5. Habilite el módulo `ssl` de apache.
 6. Cree un nuevo virtualhost con la configuración [testssl](#Config-testssl).
@@ -27,3 +27,29 @@ La versión al momento (10-2019) es TLS 1.3, definida en el RFC 8446.
     SSLCertificateKeyFile /etc/ssl/localcerts/apache.key
 </VirtualHost>
 ```
+
+ejecutar
+openssl
+
+2
+sudo mkdir -o /etc/ssl/localecerts
+
+3
+UY
+departamento
+localidad
+organization
+unit organization
+site
+email adress
+
+4
+sudo chmod g+wr localcerts
+
+5
+sudo a2enmod ssl
+
+6
+modificar el archivo de admin en sites aviables de apache
+
+	

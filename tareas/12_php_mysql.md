@@ -19,3 +19,6 @@ acceder al archivo donde se ubica el /var/www/Adminf/AdmInf-web
 sudo touch info.php
 sudo nano touch info.php <?php phpinfo(); ?>
 
+investigar hay
+/etc/apache2/sites-aviables
+
