@@ -25,3 +25,14 @@ xlogo
 5 fg %N -> trae al frente un proceso
 
 6 bg &N -> esto permite lograr poner un proceso de fondo
+
+
+1. xlogo
+1.a ps aux o ps aux | grep xlogo
+2 killall xlogo o kill (idproceso)
+2.a control + c(cancela cualquier operacion), con$
+3 xlogo &
+4 jobs
+a. bg (PID)
+5 fg %(PID)
+6.kill -20 %(PID)
