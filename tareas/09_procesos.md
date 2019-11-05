@@ -36,3 +36,4 @@ xlogo
 a. bg (PID)
 5 fg %(PID)
 6.kill -20 %(PID)
+
