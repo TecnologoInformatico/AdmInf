@@ -165,5 +165,7 @@ rndc.key # Remote Name Daemon Control
 
 ## Bibliografía
 
-[wiki.debian](https://wiki.debian.org/Bind9)
-[intef](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m2/servidor_dns_bind9.html)
+- [wiki.debian](https://wiki.debian.org/Bind9)
+- [intef](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m2/servidor_dns_bind9.html)
+- [Pro DNS and BIND](http://www.zytrax.com/books/dns/)
+

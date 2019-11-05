@@ -1,5 +1,11 @@
 # Administración de infraestructuras
 
+## 19-11-05 [shell-scripting](/secciones/shell-scripting.md)
+
+## 19-11-19-20:00 Parcial 2
+
+## Indice
+
 Notas de Administración de infraestructuras.
 
 - [shell](./secciones/shell.md)
@@ -13,6 +19,7 @@ Notas de Administración de infraestructuras.
 - Logs
 - [tomcat](./secciones/tomcat.md)
 - [apache](./secciones/apache.md)
+- [shell scripting](./secciones/shell-scripting.md)
 
 - [git](./secciones/git.md)
 - [Editores de texto](./secciones/editores_de_texto.md)
