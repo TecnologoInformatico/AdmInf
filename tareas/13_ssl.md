@@ -26,7 +26,7 @@ La versión al momento (10-2019) es TLS 1.3, definida en el RFC 8446.
     SSLCertificateFile /etc/ssl/localcerts/apache.pem
     SSLCertificateKeyFile /etc/ssl/localcerts/apache.key
 </VirtualHost>
-```
+
 
 ejecutar
 openssl
