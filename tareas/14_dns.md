@@ -11,18 +11,21 @@
 
 ## Servidor Autoritativo
 
+Para utilizar el servidor DNS por defecto en nuestro host, editar el archivo `/etc/resolv.conf`.
+
 - Ingrese en la configuración para un top level domain `.local` y el dominio `adminf` en el archivo `/etc/bind/named.conf.local`.
 
   ```cs
   zone "adminf.local" IN {
-  type master;
-  file "/etc/bind/db.adminf.local";
-  allow-update { none; };
+    type master;
+    file "/etc/bind/db.adminf.local";
+    allow-update { none; };
   };
   ```
 
 - Agregue el archivo de base de datos para la zona. `db.adminf.local`
 
+<<<<<<< HEAD
 - Reinicie el servicio del servidor e investigue mediante los comandos `nslookup` y `tcpdump` el funcionamiento.
 
 
@@ -45,3 +48,26 @@ curl www.adminf.local
 
 colocando la ip de la maquina
 y el search nuestro dominio
+=======
+`$cat db.adminf.local`
+
+```cs
+; BIND archivo para el dominio adminf.local
+;
+$TTL    86400
+@       IN      SOA     adminf.local. root.adminf.local. (
+                              1         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                          86400 )       ; Negative Cache TTL
+;
+@       IN      NS      ns.adminf.local.
+ns      IN      A       172.28.128.4
+www     IN      A       172.28.128.4
+```
+
+- Reinicie el servicio del servidor e investigue mediante los comandos `nslookup` y `tcpdump` el funcionamiento.
+
+`sudo service bind9 restart`
+>>>>>>> dc410439ffff990737ad3c3e64eb22758e51e06b

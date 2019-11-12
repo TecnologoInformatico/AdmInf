@@ -56,9 +56,9 @@ Para resolver las peticiones de nombres del dominio interno *"tecnologo.com"* se
 ```cs
 // /etc/bind/named.conf.local
 // Archivo para búsquedas directas
-zone "tecnologo.com" {
+zone "tecnologo.com" IN {
     type master;
-    file "/etc/bind/tecnologo.db";
+    file "/etc/bind/db.tecnologo";
 };
 
 // Archivo para búsquedas inversas
@@ -157,7 +157,15 @@ Protocolo definido en el [RFC 2845](https://tools.ietf.org/html/rfc2845) cuya pr
 rndc.key # Remote Name Daemon Control
 ```
 
+## Otros archivos importantes
+
+- `/etc/resolv.conf`
+- `/etc/dhcp/dhclient.conf`
+- `/var/log/syslog`
+
 ## Bibliografía
 
-[wiki.debian](https://wiki.debian.org/Bind9)
-[intef](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m2/servidor_dns_bind9.html)
+- [wiki.debian](https://wiki.debian.org/Bind9)
+- [intef](http://www.ite.educacion.es/formacion/materiales/85/cd/linux/m2/servidor_dns_bind9.html)
+- [Pro DNS and BIND](http://www.zytrax.com/books/dns/)
+
