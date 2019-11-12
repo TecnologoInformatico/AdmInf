@@ -14,3 +14,7 @@ Se busca completar el stack LAMP con la instalación de MySQL y PHP en nuestro s
 4. Acceda al sitio e investigue el resultado obtenido.
 5. Instale phpMyAdmin
   `sudo apt-get install phpmyadmin`
+
+## Enlaces
+
+- [LAMP en ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-14-04)
