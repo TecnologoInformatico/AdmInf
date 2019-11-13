@@ -16,3 +16,9 @@ mediante el programa robocopy
 ## Documentación
 
 Documente los comandos utilizados y las opciones que le hayan resultado útiles.
+1.
+45 21 * * * echo "Faltan 15 minutos" >> /home/tecnologo/notas.txt
+
+2.
+00 22 * * * tar -zcf /home/tecnolgo/respaldo/resp.tgz /home/tecnolgo/notas.txt
+
