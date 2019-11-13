@@ -15,6 +15,7 @@ Se busca completar el stack LAMP con la instalación de MySQL y PHP en nuestro s
 5. Instale phpMyAdmin
   `sudo apt-get install phpmyadmin`
 
+<<<<<<< HEAD
 acceder al archivo donde se ubica el /var/www/Adminf/AdmInf-web
 sudo touch info.php
 sudo nano touch info.php <?php phpinfo(); ?>
@@ -22,3 +23,8 @@ sudo nano touch info.php <?php phpinfo(); ?>
 investigar hay
 /etc/apache2/sites-aviables
 
+=======
+## Enlaces
+
+- [LAMP en ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-14-04)
+>>>>>>> de67b3fb3beae31118168c1cb41dc306b3d48ea7

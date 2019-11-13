@@ -1,0 +1,21 @@
+#!/bin/bash 
+#-ruta de inteprete
+=$1
+write2=$2
+
+if [-d "./sandbox/Adminfo/RootDocument"]
+then
+sudo eco  /etc/hosts >> "$write  www.adminfo.local"
+sudo eco
+else
+then
+mkdir -p "./sandbox/Aminfo/RootDocument"
+fi
+
+#create file touch
+#recorrer hasta el parafo correcto
+#borrar 3 parafos
+#insertar 
+#ServerName = www.adminfo.local
+#ServerAlias
+#DocumentRoot = /www/adminfo 

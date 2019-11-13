@@ -50,9 +50,12 @@ Ej: `mv script.sh bin/myscript`
 ## if
 
 ```sh
-if [<condicion>]
+if [<condicion>];
 then
     <comandos>
+elif [<cond>];
+then
+   <comandos>
 fi
 ```
 
@@ -92,6 +95,8 @@ El test `[[]]` admite el manejo de expreciones regulares del modo `string1 =~ re
 ## Exit status
 
 Los comandos, incluyendo los scripts, retornan un valor al sistema cuando finalizan, llamado estado de salida o código de retorno, `exit status`. Este valor es un entero en el rango del 0 al 255, indicando éxito o fallo en la ejecución.
+
+`exit 0` o `exit 1`
 
 Por convención, cero indica una ejecución exitosa, mientras que cualquier otro valor fallo.
 
@@ -153,4 +158,3 @@ Material basado en el curso de [Ryan Chadwick](https://ryanstutorials.net/linuxt
 - [ryanstutorials](https://ryanstutorials.net/bash-scripting-tutorial/)
 - [bash academy](https://www.bash.academy/)
 - [cyberciti](https://bash.cyberciti.biz/guide/Main_Page)
-
