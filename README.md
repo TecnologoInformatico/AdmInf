@@ -1,8 +1,24 @@
 # Administración de infraestructuras
 
-## 19-11-05 [shell-scripting](/secciones/shell-scripting.md)
+## 19-11-19-20:30 [Parcial 2](./parciales/191112.md)
 
-## 19-11-19-20:00 Parcial 2
+Está cargada la solución al simulacro del [Parcial 2](./parciales/191112.md).
+
+## Resultados Parcial 1
+
+| Alumno        | resultado |
+|---------------|-----------|
+| arrieta       | 40        |
+| camilo        | 35        |
+| castro        | 18        |
+| balbiani      | 37        |
+| rodriguez     | 24        |
+| garrido       | 38        |
+| cerdeña       | 35        |
+| suarez        | 32        |
+| alvarez       | 40        |
+| sepergo       | 36        |
+| zimmer        | 34        |
 
 ## Indice
 
