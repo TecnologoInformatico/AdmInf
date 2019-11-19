@@ -33,6 +33,9 @@ La versión al momento (10-2019) es TLS 1.3, definida en el RFC 8446.
 		Locality Name (eg, city) []:San Jose de Mayo
 		Organization Name (eg, company) [Internet Widgits Pty Ltd]:Tecnologo Informatico
 		Organizational Unit Name (eg, section) []:Administracion de infraestructura
+	
+	**Common Name**: Debe coincidir con el **ServerName** del virtual host
+	
 		Common Name (e.g. server FQDN or YOUR name) []:adminf
 		Email Address []:ejemplo@email.com
 
