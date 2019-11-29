@@ -4,21 +4,22 @@
 
 Está cargada la solución al simulacro del [Parcial 2](./parciales/191112.md).
 
-## Resultados Parcial 1
+## Resultados Finales
 
-| Alumno        | resultado |
-|---------------|-----------|
-| arrieta       | 40        |
-| camilo        | 35        |
-| castro        | 18        |
-| balbiani      | 37        |
-| rodriguez     | 24        |
-| garrido       | 38        |
-| cerdeña       | 35        |
-| suarez        | 32        |
-| alvarez       | 40        |
-| sepergo       | 36        |
-| zimmer        | 34        |
+| Alumno    | P 1   | P 2   | Final   | Nota |
+|-----------|-------|-------|---------|------|
+| Alvarez   | 40/40 | 60/60 | 100/100 |   12 |
+| Arrieta   | 40/40 | 55/60 |  95/100 |   11 |
+| Balbiani  | 37/40 | 40/60 |  77/100 |    8 |
+| Camilo    | 35/40 | 40/60 |  75/100 |    8 |
+| Castro    | 18/40 | 30/60 |  45/100 |    4 |
+| Cerdeña   | 35/40 | 35/60 |  70/100 |    7 |
+| Garrido   | 38/40 | 40/60 |  78/100 |    8 |
+| Rodriguez | 24/40 | 30/60 |  54/100 |    5 |
+| Sepergo   | 36/40 | 40/60 |  76/100 |    7 |
+| Suarez    | 32/40 | 35/60 |  67/100 |    6 |
+| Zimmer    | 34/40 | 35/60 |  69/100 |    6 |
+
 
 ## Indice
 
