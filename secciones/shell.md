@@ -1,41 +1,46 @@
 # Shell
 
-La shell es la intermediaria entre el Sistema Operativo y el usuario.
+## ¿Qué es la shell?
 
-Existen varias shell, la más usada es la bash. Los comandos los interpreta la Shell.
+Para interactuar con una computadora existen intefaces gráficas `GUI` e interfaces de linea de comandos, lo que se denomina `shell`. La shell es un interpete de comandos intermediaria entre el Sistema Operativo y el usuario.
 
-Entradas de teclado para el uso de la línea de comandos
+Básicamente, una shell es un **macro procesador** que ejecuta comandos, en donde el termino macro procesador refiere a la funcionalidad en la que determinados textos y símbolos son expandidos para crear complejas expresiones.
 
-- *Ctrl + c* finaliza la tarea.
-- *Ctrl + l* limpia la pantalla
-- *Ctrl + a* Al inicio de la línea (tecla home)
-- *Ctrl + e* Al fin de la línea (tecla end)
-- *del* Elimina a la derecha del cursor
-- *Ctrl + k* Elimina desde el cursor al final de la línea
-- *Tabulador* Autocompletar
+Así mismo una shell de Unix es tanto un **interprete de comandos** como un **lenguaje de programación**. Como interprete de comandos la shell provee al usuario una rica interfaz a la que acceder a las utilidades del sistema. Por su parte la funcionalidad de lenguaje de programación permite que esas utilidades sean combinadas. Es posible crear un archivo conteniendo comandos, y ĺuego convertir ese mismo archivo en un nuevo comando. Esos nuevos comandos, si son alojados en directorios como el  `/bin`, están a la par de los comandos del sistema, permitiendo así que usuarios o grupos establescan entornos personalizados, o automatizar sus propias tareas de forma personalizada.
 
-## Expansión de llaves { }
+La shell puede ser utilizada de forma **interactiva** o **no interactiva**. En modo interactivo, sólo aceptaran entradas desde el teclado. En modo no interactivo, la shell ejecuta comandos leyendo desde un archivo.
 
-Mediante la expansión de llaves se pueden generar la repetición de una tarea en un sólo comando.
+Las shell proveen un pequeño conjunto de **comandos integrados** (builtins), los cuales implementan funcionalidades básicas e indispensables. Entre estas funciones se encuentran; `cd`, `break`, `continue` y `exec`, las cuales no podrían ser implementadas de forma independiente. Por otro lado comandos como `history`, `getopts`, `kill` o `pwd`, si bien podrían implementarse de forma externa, resultan más convenientes tenerlos integrados.
 
-Ejemplo: `touch /home/tecnologo/archivo{01,02,03,04,05,06}.txt`
+Existen varias shell, (`sh`, `zsh`, `fish`), de las cuales la más popular es `bash` (Bourne Again SHell).
 
-creará 6 archivos con sufijo archivo y extensión .txt
-Lo mismo se podría hacer: `touch /home/tecnologo/archivo{01..06}.txt`
+## Prompt
 
-## Sustitución de comando
+Al iniciar el emulador de terminal se despliega el prompt.
 
-Esta expansión sustituye el comando ejecutado (incluyendo sus parametros) por su salida normal. La secuencia $(comando) ejecuta el comando y permite tomar el valor devuelto por otro comando. La salida se puede almacenar en una variable.
+```sh
+[dmascheroni@admin-server ~]$
+```
 
-Formatos:
+Este conjunto de caracteres se despliega cada vez que la línea de comandos está lista para recibir órdenes. Su apariencia puede variar dependiendo de la distribución, la shell o simplemente la configuración del usuario, de todos modos en general tienen algunas características comunes:
 
-    $(comando)
-    `comando`
+El `$` indica que se encuentra logueado un usuario común, mientras que en caso de sustituírse por un `#` se estará indicando que se trata de un usuario root.
 
-Ejemplos:
+Al comienzo del prompt señalado anteriormente se muestra entre parentesis rectos el nombre del usuario logueado `dmascheroni` y el host en el cual se encuentra `admin-server`. El nombre del host en el prompt es de gran utilidad ya al acceder por acceso remoto es posible saber exactamente en que equipo estamos trabajando.
 
-    touch archivo_$(date +%y-%M-%d)
-    echo “Mi actual ubicación es `pwd`”
+El símbolo `~` indica que el usuario está en su directorio home, por lo general en el prompt se indica el directorio de trabajo actual.
+
+## Ejecutando comandos
+
+Para ejecutar un comando basta con escribirlo y presionar `Enter`. En caso de que el comando exista se nos desplegará la salida del mismo, de lo contrario se nos indicará que el comando ingresado no existe.
+
+```sh
+[dmascheroni@admin-server ~]$ asdasfasfasf
+bash: asdasfasfasf: command not found
+[dmascheroni@admin-server ~]$
+```
+
+Es posible volver a utilizar un comando previamente utilizado presionando la flecha hacia arriba `🠕`. La mayoría de las distribuciones de Linux recuerdan los últimos 1000 comandos por defecto, este comando es denominado `history`.
 
 ## Navegacion y exploracion del sistema
 
@@ -102,6 +107,43 @@ En lugar de un archivo también admite la entrada estándar, por lo que es posib
 - `whatis`
 - `alias`
 
+Entradas de teclado para el uso de la línea de comandos
+
+- *Ctrl + c* finaliza la tarea.
+- *Ctrl + l* limpia la pantalla
+- *Ctrl + a* Al inicio de la línea (tecla home)
+- *Ctrl + e* Al fin de la línea (tecla end)
+- *del* Elimina a la derecha del cursor
+- *Ctrl + k* Elimina desde el cursor al final de la línea
+- *Tabulador* Autocompletar
+
+## Expansión de llaves { }
+
+Mediante la expansión de llaves se pueden generar la repetición de una tarea en un sólo comando.
+
+Ejemplo: `touch /home/tecnologo/archivo{01,02,03,04,05,06}.txt`
+
+creará 6 archivos con sufijo archivo y extensión .txt
+Lo mismo se podría hacer: `touch /home/tecnologo/archivo{01..06}.txt`
+
+## Sustitución de comando
+
+Esta expansión sustituye el comando ejecutado (incluyendo sus parametros) por su salida normal. La secuencia $(comando) ejecuta el comando y permite tomar el valor devuelto por otro comando. La salida se puede almacenar en una variable.
+
+Formatos:
+
+```sh
+$(comando)
+`comando`
+```
+
+Ejemplos:
+
+```sh
+touch archivo_$(date +%y-%M-%d)
+echo “Mi actual ubicación es `pwd`”
+```
+
 ## Redirección
 
 - `cat`
@@ -127,11 +169,15 @@ Si se desea agregar al final de un archivo (append) se utiliza >> (si no existe 
 
 Ejemplo:
 
-    - $ ls /home/tecnologo >> test
+```sh
+ls /home/tecnologo >> test
+```
 
 Redireccionar el error:
 
-    - $ ls /home/tecno 2> test.errorCombinación de comandos |
+```sh
+ls /home/tecno 2> test.errorCombinación de comandos |
+```
 
 ### Pipes y pipeline
 
@@ -147,3 +193,7 @@ Ejemplo: `cat /etc/passwd | tee -a testVariables del entorno del sistema`
 ## bashrc
 
 `~/.bashrc`
+
+## Bibliografía / Link's
+
+- [GNU / Manual bash](https://www.gnu.org/software/bash/manual/bash.html#What-is-Bash_003f)

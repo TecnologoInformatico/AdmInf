@@ -19,4 +19,3 @@ Material basado en fuentes de:
 - [Arch linux wiki](https://wiki.archlinux.org)
 - [The Linux Command Line](http://linuxcommand.org/tlcl.php)
 - [dedoimedo](https://www.dedoimedo.com/computers/remote-windows-linux.html)
-- [entre otras...](./)

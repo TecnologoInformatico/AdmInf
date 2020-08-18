@@ -1,6 +1,6 @@
 # Tarea git
 
-1. Inicializar un repositorio en el directorio ~/repo/tarea01
+1. Inicializar un repositorio en el directorio ~/repo/tarea02
 2. Cree un archivo README.md y otro test.txt
 3. En el readme ingrese un titulo y una lista con los miembros del equipo,
 en el archivo `test.txt` ingrese un texto de prueba.
