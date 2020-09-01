@@ -35,7 +35,7 @@ home al usuario creado en la parte b.
 7. Investigar el comando groupadd (man groupadd) y dé de alta un grupo nuevo.
 8. Asígne un identificador de grupo apropiado (distinto del grupo 0 y del grupo actual) al
 grupo creado en la parte anterior (comando groupmod)
-9. Agregue el usuario creado en lla parte b al grupo creado en la parte g (comando
+9. Agregue el usuario creado en la parte *2* al grupo creado en la parte *7* (comando
 adduser)
 10. Cree un grupo y dos usuarios adicionales (con sus respectivos directorios home) que
 pertenezcan a dicho grupo.
@@ -43,15 +43,15 @@ pertenezcan a dicho grupo.
 ### Seguridad de usuarios y grupos
 
 1. Ingrese con el usuario de la parte 1.1 e intente ingresar a los directorios de los usuarios
-creados en la parte 1.10. ¿Se logró el acceso? ¿Por qué?
+creados en la parte *1.10*. ¿Se logró el acceso? ¿Por qué?
 2. Ingrese con el usuario user y cambie los permisos de cada uno de los directorios home
-de los usuarios dados de alta en la parte 1 para que puedan ser ingresados únicamente
+de los usuarios dados de alta en la parte *1* para que puedan ser ingresados únicamente
 por el usuario correspondiente (comando chmod)
-3. Vuelva a ingresar con el usuario 1.2 e intente ingresar a los directorios de los usuarios
-creados en la parte 1.10. ¿Se logró el acceso? ¿Por qué?
-4. Ingrese con el usuariro user y cree un directorio compartido con todos los permisos
-5. Ingrese con algún usuario del grupo de la parte 1.10 y cree un archivo en el directorio
+3. Vuelva a ingresar con el usuario *1.2* e intente ingresar a los directorios de los usuarios
+creados en la parte *1.10*. ¿Se logró el acceso? ¿Por qué?
+4. Ingrese con el usuario user y cree un directorio compartido con todos los permisos
+5. Ingrese con algún usuario del grupo de la parte *1.10* y cree un archivo en el directorio
 compartido. Ingrese con otro usuario del mismo grupo e intente modificarlo. ¿Puede?
 ¿Por qué? Investigue y modifique lo que sea necesario para que ambos usuarios puedan modificar el archivo.
-6. Cambie los permisos del archivo para que el usuario creado en la parte 1.2 también
+6. Cambie los permisos del archivo para que el usuario creado en la parte *1.2* también
 pueda modificar el archivo y verifique los cambios realizados.

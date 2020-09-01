@@ -2,14 +2,14 @@
 
 - Permisos
   - [chmod](#chmod) cambia el modo de un archivo (permisos)
-  - `umask` Setea los permisos por defecto de los archivos
+  - [umask](#umask) Setea los permisos por defecto de los archivos
   - `chown` Cambia el propietario (y/o grupo) de un archivo
   - `chgrp` Cambia el grupo de un archivo
 
 - Usuarios y grupos
   - [id](#id) Muestra la identidad del usuario
   - [users](#users) Muestra los usuarios logueados en el sistema
-  - `su` Inicia un shell como otro usuario
+  - [su](#su) Inicia un shell como otro usuario
   - [sudo](#sudo) Ejecuta un comando como otro usuario
   - [passwd](#passwd) Cambia la contraseña de un usuario
   - [useradd](#useradd) Crea un usuario (bajo nivel)
@@ -68,6 +68,36 @@ Sólo el propietario del archivo, o el superusuario son capaces de cambiar estos
 
 Ej: `chmod u+x file.sh`
 
+### umask
+
+El comando umaske controla los permisos por defectos que se le dan a un archivo cuando es creado. Utiliza notación octal para expresar una máscara de bits para ser removidos del modo asignado al archivo.
+
+`umask [modo]`
+
+Ej: `umask 0002`
+
+### Permisos especiales
+
+Además de los permisos de escritura lectura y ejecución existen otros tipos de permisos.
+
+#### setuid (octal 4000)
+
+El setuid, cuando es aplicado a un ejecutable setea el ID efectivo al del propietario del archivo. Frecuentemente es aplicado a algunos programas pertenecientes al usuario root.
+
+Ej: `chmod u+s programa.sh`
+
+#### setgid (octal 2000)
+
+Similar al anterior, sólo que setea el grupo real al perteneciente al archivo, en caso de ser asignado a un directorio, los archivos creados dentro de este directorio pertenecerán al propietario del directorio, en lugar del usuario creador. Esto puede ser muy útil en un directorio compartido.
+
+Ej: `chmod g+s dir`
+
+#### sticky bit (octal 1000)
+
+Este bit tiene su razón de ser en un comportamiento antiguo, en lo que respecta a archivos, de todos modos, aplicado a directorios previene que un usuario pueda borrar o renombrar archivos, salvo que sea el propietario del archivo o del directorio.
+
+Ej: `chmod +t dir`
+
 ## Usuarios y grupos
 
 ### id
@@ -78,6 +108,24 @@ idu del usuario, id y grupo principal, y grupos secundarios.
 ### users
 
 Lista los usuarios actualmente logueados en el sistema.
+
+### su
+
+El comando `su` es utilizado para iniciar una shell como otro usuario.
+
+`su [-[l]] [user]`
+
+Si la opción -l es utilizada el comando resulta en un login shell para determinado usuario, esto quiere decir que el entorno del usuario es cargado, y se cambia el `working directory` (área de trabajo) al directorio home del usuario. La opción puede ser abreviada como `-` y es del modo en que se utiliza más frecuentemente.
+
+En caso de no especificar un usuario se asume el superusuario.
+
+Luego de ingresar el comando se nos solicita ingresar la contraseña del usuario destino. Para volver al usuario original se puede ejecutar el comando `exit`.
+
+Así mismo es posible ejecutar un único comando mediante la opción `-c`.
+
+`su -c 'comando'`
+
+Tener en cuenta el utilizar comillas simples para evitar la expansión del comando en nuestra propia sesión.
 
 ### sudo
 
@@ -92,6 +140,8 @@ Así mismo también es posible utilizar dicho comando para ejecutar una acción 
 Para poder utilizar sudo el usuario debe encontrarse de algún modo en el archivo `/etc/sudoers`. En este archivo se especifica a su vez que comandos pueden requerir contraseña o que comandos puede ejecutar un usuario o grupo en particular.
 
 La modificación del archivo `/etc/sudoers` se recomienda realizar mediante el programa visudo, el cual evita que se modifique por dos personas al mismo tiempo y realiza algunas validaciones para minimizar el margen de error.
+
+La opción `-l` nos muestra los comandos que nos es posible ejecutar utilizando `sudo`.
 
 ### passwd
 
