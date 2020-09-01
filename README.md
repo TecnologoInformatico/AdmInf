@@ -6,23 +6,23 @@ Notas de Administración de infraestructuras.
 
 ### Primera parte
 
+- [git](./secciones/git.md)
 - [shell](./secciones/shell.md)
-- [variables de entorno](./secciones/variables_de_entorno.md)
 - [Permisos, usuarios y grupos](./secciones/permisos_usuarios_y_grupos.md)
 - [Gestores de paquetes](./secciones/gestores_de_paquetes.md)
+- [Editores de texto](./secciones/editores_de_texto.md)
+- [variables de entorno](./secciones/variables_de_entorno.md)
 - [Acceso Remoto](./secciones/acceso_remoto.md)
 - [Compresión](./secciones/compresion.md)
 - [Tareas programadas](./secciones/tareas_programadas.md)
 - [Procesos y servicios](./secciones/procesos_y_servicios.md)
-- Logs
 
 ### Segunda parte
 
 - [tomcat](./secciones/tomcat.md)
 - [apache](./secciones/apache.md)
+- [Logs](#segunda_parte)
 - [shell scripting](./secciones/shell-scripting.md)
-- [git](./secciones/git.md)
-- [Editores de texto](./secciones/editores_de_texto.md)
 - [rsync](./secciones/rsync.md)
 
 [Enlaces externos](./docs/enlaces.md)
