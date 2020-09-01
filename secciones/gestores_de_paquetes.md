@@ -24,8 +24,6 @@ Verificar si un paquete esta instalado
 
 `dpkg --status package_name`
 
-
-
 ## apt-get
 
 Mantenimiento de paquetes mediante repositorios.
@@ -57,6 +55,24 @@ Conociendo el nombre de un paquete instalado es posible obtener información de 
 ## aptitude
 
 ## apt
+
+`apt` es el gestor de paquetes por defecto en ubuntu y otros sistemas basados en Debian.
+
+Su funcionamiento básico es el de obtener archivos `.deb` de servidores repositorios. Para esto ubuntu cuenta con 4 repositorios oficiales:
+
+- main
+- restricted
+- universe
+- multiverse
+
+### lista de fuentes
+
+`cat /etc/apt/sources.list`
+
+El archivo `/etc/apt/sources.list` es donde se almacena la información de los repositorios, otros repositorios son almacenados como archivos `.list` en el directorio `/etc/apt/sources.list.d/`. Al igual que sucede con la mayoría de los archivos de configuración en linux, se encuentran en texto plano, por lo que pueden ser examinados y editados con cualquier editor de texto.
+
+El formato de las listas es:
+`<tipo> <url> <version-de-ubuntu> <nombre-del-repositorio>`
 
 ## Enlaces
 

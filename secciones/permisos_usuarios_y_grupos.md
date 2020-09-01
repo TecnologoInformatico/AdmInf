@@ -1,16 +1,16 @@
 # Permisos, usuarios y grupos
 
 - Permisos
-  - [id](#id) Muestra la identidad del usuario
   - [chmod](#chmod) cambia el modo de un archivo (permisos)
   - `umask` Setea los permisos por defecto de los archivos
-  - `sudo` Ejecuta un comando como otro usuario
   - `chown` Cambia el propietario (y/o grupo) de un archivo
   - `chgrp` Cambia el grupo de un archivo
 
 - Usuarios y grupos
+  - [id](#id) Muestra la identidad del usuario
+  - [users](#users) Muestra los usuarios logueados en el sistema
   - `su` Inicia un shell como otro usuario
-  - [users](#users) Cambia la contraseña de un usuario
+  - [sudo](#sudo) Ejecuta un comando como otro usuario
   - [passwd](#passwd) Cambia la contraseña de un usuario
   - [useradd](#useradd) Crea un usuario (bajo nivel)
   - [adduser](#adduser) Crea un usuario (de forma iterativa)
@@ -41,11 +41,6 @@ Los restantes 9 atributos son los permisos llamados `file mode`, representando
 la lectura `r`, escritura `w` y ejecución `x`, para el propietario del archivo `u`,
 el grupo del archivo `g` y para todos los demás `o`.
 
-## id
-
-Muestra la identidad del usuario.
-idu del usuario, id y grupo principal, y grupos secundarios.
-
 ### chmod
 
 Para cambiar el modo (los permisos), de un archivo o directorio, es utilizado el comando `chmod`.
@@ -73,11 +68,32 @@ Sólo el propietario del archivo, o el superusuario son capaces de cambiar estos
 
 Ej: `chmod u+x file.sh`
 
-## users
+## Usuarios y grupos
+
+### id
+
+Muestra la identidad del usuario.
+idu del usuario, id y grupo principal, y grupos secundarios.
+
+### users
 
 Lista los usuarios actualmente logueados en el sistema.
 
-## passwd
+### sudo
+
+En la mayoría de los sistemas actuales se evita utilizar el superusuario `root` para las tareas cotidianas. Por el contrario se utiliza el comando `sudo` que puede ser asignado a usuarios particulares sin tener que brindar el acceso al usuario `root`.
+
+![sudo en la vida real (xkcd)](https://imgs.xkcd.com/comics/sandwich.png)
+
+En muchos casos es posible recibir un mensaje en el que se nos indica que no tenemos permiso para realizar determinada tarea `Permission denied`. En esos casos se puede utilizar el comando `sudo` para realizar la operación.
+
+Así mismo también es posible utilizar dicho comando para ejecutar una acción como otro usuario utilizando la opción `-u`.
+
+Para poder utilizar sudo el usuario debe encontrarse de algún modo en el archivo `/etc/sudoers`. En este archivo se especifica a su vez que comandos pueden requerir contraseña o que comandos puede ejecutar un usuario o grupo en particular.
+
+La modificación del archivo `/etc/sudoers` se recomienda realizar mediante el programa visudo, el cual evita que se modifique por dos personas al mismo tiempo y realiza algunas validaciones para minimizar el margen de error.
+
+### passwd
 
 Modifica la contraseña de un usuario.
 
