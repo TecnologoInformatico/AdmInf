@@ -1,37 +1,43 @@
-## Welcome to GitHub Pages
+# Administración de infraestructuras
 
-You can use the [editor on GitHub](https://github.com/TecnologoInformatico/AdmInf/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Notas de Administración de infraestructuras.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Índice
 
-### Markdown
+### Primera parte
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- [shell](./secciones/shell.md)
+- [variables de entorno](./secciones/variables_de_entorno.md)
+- [Permisos, usuarios y grupos](./secciones/permisos_usuarios_y_grupos.md)
+- [Gestores de paquetes](./secciones/gestores_de_paquetes.md)
+- [Acceso Remoto](./secciones/acceso_remoto.md)
+- [Compresión](./secciones/compresion.md)
+- [Tareas programadas](./secciones/tareas_programadas.md)
+- [Procesos y servicios](./secciones/procesos_y_servicios.md)
+- Logs
 
-```markdown
-Syntax highlighted code block
+### Segunda parte
 
-# Header 1
-## Header 2
-### Header 3
+- [tomcat](./secciones/tomcat.md)
+- [apache](./secciones/apache.md)
+- [shell scripting](./secciones/shell-scripting.md)
+- [git](./secciones/git.md)
+- [Editores de texto](./secciones/editores_de_texto.md)
+- [rsync](./secciones/rsync.md)
 
-- Bulleted
-- List
+[Enlaces externos](./docs/enlaces.md)
 
-1. Numbered
-2. List
+## bibliografía
 
-**Bold** and _Italic_ and `Code` text
+- [The Linux Command Line](http://linuxcommand.org/tlcl.php)
 
-[Link](url) and ![Image](src)
-```
+## Créditos
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Material basado en fuentes de:
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/TecnologoInformatico/AdmInf/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- [GNU](https://www.gnu.org/)
+- [Digital Ocean](https://www.digitalocean.com)
+- [Arch linux wiki](https://wiki.archlinux.org)
+- [The Linux Command Line](http://linuxcommand.org/tlcl.php)
+- [dedoimedo](https://www.dedoimedo.com/computers/remote-windows-linux.html)
+- [entre otras...](./docs/enlaces.md)
