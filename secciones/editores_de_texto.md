@@ -126,7 +126,6 @@ vi es algo estricto en cuanto a la idea de linea, por lo general no permite elim
 
 ### Reemplazar
 
-
 Es posible mover el cursor en base a una busqueda.
 
 Para buscar en una linea en particular esto es posible mediante el comando `f` y un caracter, ej: `fa`, este comando lleva a la primer ocurrencia de la letra a, y puede ser repetido mediante el ingreso de `;`.
@@ -139,9 +138,9 @@ vi puede realizar una busqueda y reemplazo de forma global mediante un comando `
 
 `:%s/Texto/texto2/g`
 
-Donde 
+Donde:
 
-- `:` inicia el comando `ex`, 
+- `:` inicia el comando `ex`
 - `%` especifica el rango de lineas, el simbolo de porcentaje es un atajo desde la primer linea a la última, lo que también se podría definir como `1,$`.
 - `s` La operación a realizar, en este caso sustitución.
 - `/Texto/texto2/` El patrón de busqueda y sustitución.
