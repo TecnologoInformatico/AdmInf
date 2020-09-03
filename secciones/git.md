@@ -45,12 +45,13 @@ El flujo de trabajo básico en git es algo así:
 - `remote`
 - `fetch`
 - `push`
+- `test de remoto`
 - `pull`
 
 ## Configuración de usuario
 
-`git config --global user.name "nombre usuario"`
-`git config --global user.email "usuario@mail.com"`
+`git config --global user.name "nombre del usuario"`
+`git config --global user.email "usuariodegit@mail.com"`
 
 ## Acciones útiles
 
