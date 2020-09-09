@@ -1,3 +1,3 @@
 bin/
-private/
+/private/*
 *.swp

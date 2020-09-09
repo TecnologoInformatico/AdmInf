@@ -167,6 +167,10 @@ Ej:
 
 Agrega un usuario al sistema.
 
+Se carga template, ver directorio:
+
+`/etc/skel`
+
 ### usermod
 
     usermod [opciones] usuario
