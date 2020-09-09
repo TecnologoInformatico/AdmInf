@@ -32,6 +32,18 @@ El par de claves se genera por defecto en el directorio `/home/username/.ssh/id_
 
 [ssh key-based authentication](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
 
+`ssh-copy-id -i ~/.ssh/id_rsa.pub hostname`
+
+### Desactivar login con root via ssh
+
+`vi /etc/ssh/sshd_config`
+
+`PermitRootLogin no`
+
+`AllowUsers maske peteco`
+
+`/etc/init.d/sshd restart`
+
 ## SFTP
 
     sftp username@remote_hostname_or_IP:
