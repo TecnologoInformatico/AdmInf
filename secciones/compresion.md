@@ -6,8 +6,8 @@ Algunas herramientas útiles para llevar a cabo esta tarea son:
 
 - [gzip](#gzip)
 - [bzip2](#bzip2)
-- [tar](#tar)
 - [zip](#zip)
+- [tar](#tar)
 - [rsync](#rsync)
 
 Además de las ya antes mencionadas sftp, scp.
@@ -34,13 +34,13 @@ Este tipo de compresión preserva toda la información contenida en el archivo o
 
 Por otro lado existen técnicas donde se remueven datos al momento de la compresión para lograr una mayor reducción del tamaño final, al ser restablecido el archivo no es exactamente igual al original, sino que bastante similar. Ejemplos de este tipo de compresión son JPEG y MP3.
 
-## gzip
+### gzip
 
 ```s
 gzip ruta/archivo/a/comprimir
 ```
 
-El programa gzip es utilizado para comprimir uno o más archivos. CUando es ejecutado reemplaza el original con una versión comprimida. Se cuenta a su vez con la contraparte `gunzip`, el cual puede ser utilizado para volver a los archivos a su estado original.
+El programa gzip es utilizado para comprimir uno o más archivos. Cuando es ejecutado reemplaza el original con una versión comprimida. Se cuenta a su vez con la contraparte `gunzip`, el cual puede ser utilizado para volver a los archivos a su estado original.
 
 ```sh
 ls -l /etc > foo.txt
@@ -55,21 +55,45 @@ En el ejemplo anterior se crea un archivo foo.txt a partir del listado del direc
 
 Cabe destacar que tanto el archivo original como su versión comprimida mantienen los mismos permisos y timestamp.
 
-| opción | opción larga | descripción |
-| ------ | ------------ | ----------- |
-| -c     | ------------ | ----------- |
-| -d     | ------------ | ----------- |
-| -f     | ------------ | ----------- |
-| -h     | ------------ | ----------- |
-| -l     | ------------ | ----------- |
-| -r     | ------------ | ----------- |
-| -t     | ------------ | ----------- |
-| -v     | ------------ | ----------- |
-| -6     | ------------ | ----------- |
+#### Opciones de gzip
+
+| opción | opción larga         | descripción |
+| ------ | -------------------- | ----------- |
+| -c     | --stdout --to-stdout | ----------- |
+| -d     | --decompress         | ----------- |
+| -f     | --force              | ----------- |
+| -h     | --help               | ----------- |
+| -l     | --list               | ----------- |
+| -r     | --recursive          | ----------- |
+| -t     | --test               | Testea la integridad de un archivo comprimido. |
+| -v     | --verbose            | ----------- |
+| -1     | --fast               | ----------- |
+| -6     | de 1 a 9, 6 default  | ----------- |
+| -9     | --best               | ----------- |
 
 Este comando suele ser utilizado junto con el comando tar.
 
-## tar
+### bzip2
+
+Programa similar a gzip pero que utiliza un algoritmo diferente de compresión, el cual brinda mejores niveles de compresión, pero con el costo de mayor tiempo de procesamiento.
+
+Su funcionamiento es similar a gzip, al comprimir un archivo a este se le asigna la extensión bzip2. Las opciones que incluye son las mismas que gzip a excepción de `-r`.
+
+Programas que incluye:
+
+- bunzip2 (descomprime `bzip2 -d`)
+- bzcat (descomprime hacia stdout, la salida estandar `bzip2 -c`)
+- bzip2recover (Extrae bloques de archivos bz2 dañados)
+
+## Archivado
+
+Una tarea frecuente al administrar datos en conjunto con la compresión es la de archivar, proceso por el cual se almacenan varios archivos como uno único. Esto se realiza por lo general como parte de un sistema de backup o para mover información desde un sistema activo hacia algún almacenamiento de largo plazo.
+
+### tar
+
+En el mundo de los sistemas tipo UNIX el programa tar es la clásica herramienta con esta finalidad.
+
+La extensión que suele utilizar este tipo de archivos es `.tar` cuando se almacena la información sin procesar, o `.tgz` cuando se utilizó un proceso de compresión mediante gzip.
 
 tar [OPTION...] [FILE]...
 
