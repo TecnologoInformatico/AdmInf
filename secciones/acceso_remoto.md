@@ -44,6 +44,28 @@ El par de claves se genera por defecto en el directorio `/home/username/.ssh/id_
 
 `/etc/init.d/sshd restart`
 
+### debuguear
+
+Es deseable poder controlar los inicios de sesión tanto los exitosos como los fallidos.
+Eso es posible indagando en los logs:
+
+`sudo less /var/log/auth.log`
+
+o utilizando el comando `last`:
+
+`last [-i -N] [username]`
+
+`lastb` para los fallidos.
+
+### Facilitar el acceso
+
+```sh
+host miserver
+    hostname 127.0.0.1
+    user dmascheroni
+    IdentityFile /home/dmascheroni/.ssh/mykey_rsa
+```
+
 ## SFTP
 
     sftp username@remote_hostname_or_IP:
