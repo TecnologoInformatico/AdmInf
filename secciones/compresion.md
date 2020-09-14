@@ -126,12 +126,36 @@ tar -xzvf respaldo_dir.tar dir
 
 ## zip
 
+El programa zip es tanto una herramienta de compresión como un archivador, y el formato generado es común en el entorno Windows. En el mundo UNIX el programa de compresión predominante es gzip, seguido por bzip2, de todos modos en casos donde se deba interactuar con un sistema Windows este programa puede ser de ayuda.
+
+La sintaxis básica es:
+
+`zip opciones zipFile file...`
+
 Comprimir todo el contenido de la carpeta myFolder.
 
 ```s
 zip -r zipFile.zip myFolder
 ```
 
+En caso de omitir la opción -r estaríamos incluyendo el directorio, pero nada de su contenido.
+
+La extensión .zip es agregada de forma automática, pero se puede incluír para mejorar la claridad de la ejecución.
+
+En zip si un archivo especificado existe, este es actualizado en lugar de ser reemplazado, pero los nuevos archivos son agregados, mientras que los existentes son reemplazados.
+
+Listar archivos:
+
+`unzip -l archivo.zip directorio/a/extraer/txt`
+
+Extraer archivo en particular:
+
+`unzip -l archivo.zip directorio/a/extraer/txt`
+
 ```s
 unzip zipFile.zip -d myNewFolder
 ```
+
+## Fuentes y enlaces
+
+- [TLCL | The linux Command Line book]()

@@ -6,6 +6,8 @@ Este comando sincroniza tanto directorios como archivos de un lugar a otro, el m
 rsync ruta/directorio/a/respaldar usuario@host:ruta/respaldo
 ```
 
+Una estrategia frecuentemente utilizada al momento de mantener un backup es mantener uno o más directorios en sincronización. En los sistemas tipo UNIX la herramienta de preferencia para esta tarea es `rsync`.
+
 - `-z` Activa la compresión del archivo respaldado.
 - `-v` Activa el modo verbose, esto significa que el comando documentara el respaldo.
 - `-r` Activa la recursividad que sera usada para que el comando entre dentro de los directorios y respalde, de no ser asi solo respaldara el primer directorio.
