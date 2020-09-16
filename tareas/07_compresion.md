@@ -5,7 +5,7 @@
 3. realice un tar con compresión del repositorio: `~/bak/repo_bak_02.tgz`.
 4. Utilice el comando sftp para trasladar el repositorio en su estado original al host.
 5. Realice el traslado por sftp, esta vez para los archivos dentro de bak (los archivos .tgz).
-6. Extraiga los archivos de ambos archivos.
+6. Extraiga el contenido de ambos archivos `tar`.
 7. Investigue la herramienta `rsync`
 8. Utilice `rsync` para crear un espejo de la carpeta `~/repo/compresion`
   en `~/bak/compresion`
