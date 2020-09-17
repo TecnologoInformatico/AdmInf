@@ -14,22 +14,23 @@ Notas de Administración de infraestructuras.
 - [variables de entorno](secciones/variables_de_entorno.md)
 - [Acceso Remoto](secciones/acceso_remoto.md)
 - [Compresión](secciones/compresion.md)
-- [Tareas programadas](secciones/tareas_programadas.md)
-- [Procesos y servicios](secciones/procesos_y_servicios.md)
+- [rsync](secciones/rsync.md)
 
 ### Segunda parte
 
+- [Procesos y servicios](secciones/procesos_y_servicios.md)
 - [tomcat](secciones/tomcat.md)
 - [apache](secciones/apache.md)
 - [Logs](#segunda_parte)
+- [Tareas programadas](secciones/tareas_programadas.md)
 - [shell scripting](secciones/shell-scripting.md)
-- [rsync](secciones/rsync.md)
 
 [Enlaces externos](docs/enlaces.md)
 
 ## bibliografía
 
 - [The Linux Command Line](http://linuxcommand.org/tlcl.php)
+- [Git Pro](https://git-scm.com/book/en/v2)
 
 ## Créditos
 
