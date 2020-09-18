@@ -15,6 +15,7 @@ Notas de Administración de infraestructuras.
 - [Acceso Remoto](secciones/acceso_remoto.md)
 - [Compresión](secciones/compresion.md)
 - [rsync](secciones/rsync.md)
+- [redirección](secciones/redireccion.md)
 
 ### Segunda parte
 
