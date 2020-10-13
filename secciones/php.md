@@ -1,5 +1,11 @@
 # PHP
 
+```php
+<?php
+    phpinfo();
+>
+```
+
 ## instalar PHP
 
 Para instalar PHP basta con instalar el paquete php, pero para utilizarlo junto con apache y mysql además es necesario instalar los módulos para ello.
