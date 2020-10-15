@@ -28,7 +28,7 @@ Y reiniciar el servidor apache.
 
 ## seguridad
 
-Es buena idea brindar una capara de seguridad a la aplicación phpmyadmin, ya que cumple una función un tanto delicada.
+Es buena idea brindar una capa de seguridad a la aplicación phpmyadmin, ya que cumple una función un tanto delicada.
 
 Para esto es posible crear una puerta de enlace `gateway` desde el mismo servidor.
 
