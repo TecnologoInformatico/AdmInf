@@ -128,3 +128,12 @@ Para conectarse a un server es necesario resolver un ServerName a dirección IP.
 Para hacer pruebas locales con virtual host sin necesidad de configurar un servidor DNS es posible editar el archivo */etc/hosts*.
 
 `127.0.0.1   www.mivirtualhost.com`
+
+## Establecer server name para suprimir los errores de sintaxis
+
+httpd.conf
+
+ServerName www.tecnologo.com:80
+
+$ sudo apache2ctl configtest
+$ sudo vim /etc/apache2/apache2.conf

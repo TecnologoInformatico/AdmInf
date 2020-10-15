@@ -29,8 +29,3 @@ instalar el paquete php7.0-mysql
 
 php -r "phpinfo();" > nombreArchivo
 Lo vuelca en un archivo
-
-## Establecer server name para suprimir los errores de sintaxis
-
-$ sudo apache2ctl configtest
-$ sudo vim /etc/apache2/apache2.conf

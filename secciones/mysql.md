@@ -97,6 +97,10 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'password
 
 En lugar de `caching_sha2_password` es posible utilizar la anterior versión `mysql_native_password`, en caso de que se presenten problemas de compatibilidad.
 
+```sql
+CREATE USER 'tecnologo'@'localhost' IDENTIFIED WITH mysql_native_password BY 'tecnologo';
+```
+
 ## Otorgar privilegios
 
 ```sql
