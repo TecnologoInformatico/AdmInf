@@ -65,6 +65,10 @@ DROP USER usuario;
 select User from mysql.user;
 ```
 
+```SQL
+SELECT user,authentication_string,plugin,host FROM mysql.user;
+```
+
 Ver detalles de la tabla:
 
 desc mysql.user;
@@ -98,7 +102,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'password
 En lugar de `caching_sha2_password` es posible utilizar la anterior versión `mysql_native_password`, en caso de que se presenten problemas de compatibilidad.
 
 ```sql
-CREATE USER 'tecnologo'@'localhost' IDENTIFIED WITH mysql_native_password BY 'tecnologo';
+CREATE USER 'tecnologo'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 ```
 
 ## Otorgar privilegios
@@ -129,3 +133,27 @@ Ejemplo:
 ## Privilegios
 
 `grant all on nombre_de_base_de_datos.* to 'nuevo_usuario'@'localhost';`
+
+## Permitir acceso desde el exterior
+
+DESACONSEJADO!
+
+```sql
+CREATE USER 'tecnologo'@'%' IDENTIFIED WITH mysql_native_password BY 'password';
+```
+
+Habilitar en el firewall: `sudo ufw allow mysql`
+
+Permitir el acceso a mysql desde el exterior:
+
+`sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf`
+
+```cfg
+# If MySQL is running as a replication slave, this should be
+# changed. Ref https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_tmpdir
+# tmpdir                = /tmp
+#
+# Instead of skip-networking the default is now to listen only on
+# localhost which is more compatible and is not less secure.
+bind-address            = 0.0.0.0 // Modificar esta linea la cual originalmente apunta a localhost.
+```

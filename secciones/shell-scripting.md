@@ -63,22 +63,22 @@ fi
 
 Los parentesis rectos `[]` en el if son una referencia al comando `test`, por lo que todos los operadores que el comando test acepta también pueden ser utilizados en un if.
 
-| Operador | Descripción |
-|----------|-------------|
-| ! Expresión          | La expresión es falsa. |
-| -n STRING             | El tamaño del string es mayor a cero. |
-| -z STRING             | El string es vacío. |
-| STRING1 = STRING2     | STRING1 es igual a STRING2 |
-| STRING1 != STRING2    | STRING1 no es igual a STRING2 |
-| INTEGER1 -eq INTEGER2 | INTEGER1 es numericamente igual a INTEGER2 |
+| Operador              | Descripción                                  |
+|-----------------------|----------------------------------------------|
+| ! Expresión           | La expresión es falsa.                       |
+| -n STRING             | El tamaño del string es mayor a cero.        |
+| -z STRING             | El string es vacío.                          |
+| STRING1 = STRING2     | STRING1 es igual a STRING2                   |
+| STRING1 != STRING2    | STRING1 no es igual a STRING2                |
+| INTEGER1 -eq INTEGER2 | INTEGER1 es numericamente igual a INTEGER2   |
 | INTEGER1 -gt INTEGER2 | INTEGER1 es numericamente mayor que INTEGER2 |
 | INTEGER1 -lt INTEGER2 | INTEGER1 es numericamente menor que INTEGER2 |
-| -d FILE               | FILE existe y es un directorio. |
-| -e FILE               | FILE existe. |
-| -r FILE               | FILE existe y tiene permisos de lectura. |
-| -s FILE               | FILE existe y su tamaño es mayor a cero. |
-| -w FILE               | FILE existe y tiene permisos de escritura. |
-| -x FILE               | FILE existe y tiene permisos de ejecución. |
+| -d FILE               | FILE existe y es un directorio.              |
+| -e FILE               | FILE existe.                                 |
+| -r FILE               | FILE existe y tiene permisos de lectura.     |
+| -s FILE               | FILE existe y su tamaño es mayor a cero.     |
+| -w FILE               | FILE existe y tiene permisos de escritura.   |
+| -x FILE               | FILE existe y tiene permisos de ejecución.   |
 
 Hay una versión más moderna de test `[[]]` y otra para el manejo de enteros `(())`
 

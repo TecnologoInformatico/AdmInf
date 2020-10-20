@@ -34,6 +34,35 @@ El par de claves se genera por defecto en el directorio `/home/username/.ssh/id_
 
 `ssh-copy-id -i ~/.ssh/id_rsa.pub hostname`
 
+#### DNS SPOOFING DETECTED
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@       WARNING: POSSIBLE DNS SPOOFING DETECTED!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+The RSA host key for dilemak.com has changed,
+and the key for the corresponding IP address 45.79.212.168
+has a different value. This could either mean that
+DNS SPOOFING is happening or the IP address for the host
+and its host key have changed at the same time.
+Offending key for IP in /home/maske/.ssh/known_hosts:35
+  remove with:
+  ssh-keygen -f "/home/maske/.ssh/known_hosts" -R "45.79.212.168"
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the RSA key sent by the remote host is
+SHA256:a/ZQB23zfgZKZvwDXsbjhpTivxD6mS+9s6P2PfmLYWo.
+Please contact your system administrator.
+Add correct host key in /home/maske/.ssh/known_hosts to get rid of this message.
+Offending RSA key in /home/maske/.ssh/known_hosts:17
+  remove with:
+  ssh-keygen -f "/home/maske/.ssh/known_hosts" -R "dilemak.com"
+RSA host key for dilemak.com has changed and you have requested strict checking.
+Host key verification failed.
+
 ### Desactivar login con root via ssh
 
 `vi /etc/ssh/sshd_config`
