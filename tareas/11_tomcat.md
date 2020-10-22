@@ -158,3 +158,47 @@ Por el momento no tendremos habilitado el acceso a la sección de mantenimiento,
 En caso de que se haya podido acceder al servidor con éxito, habilitar el archivo del servicio para que se ejecute al iniciar el sistema:
 
     sudo systemctl enable tomcat
+
+### 7 — Configuración de la interfaz web de mantenimiento
+
+Para utilizar la interfaz web de mantenimiento, es necesario agregar un usuario al servidor, lo que realizaremos modificando el archivo `tomcat-users.xml`:
+
+`sudo vim /opt/tomcat/conf/tomcat-users.xml`
+
+Los roles que le asignaremos al usuario son manager-gui y admin-gui.
+tomcat-users.xml — Admin User
+
+<tomcat-users . . .>
+    <user username="admin" password="password" roles="manager-gui,admin-gui"/>
+</tomcat-users>
+
+Guardar y cerrar el archivo.
+
+Las nuevas versiones de Tomcat por defecto restringen el acceso al panel de administración, habilitando únicamente conexiones locales. En el archivo context.xml es posible agregar una IP para poder acceder de forma remota.
+
+Para habilitar el panel de administración:
+
+    sudo vim /opt/tomcat/webapps/manager/META-INF/context.xml
+
+Para el panel de hosts:
+
+    sudo vim /opt/tomcat/webapps/host-manager/META-INF/context.xml
+
+Se puede comentar la restricción o agregar la IP remota para habilitar el acceso.
+
+<Context antiResourceLocking="false" privileged="true" >
+  <!--<Valve className="org.apache.catalina.valves.RemoteAddrValve"
+         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />-->
+</Context>
+
+Para que los cambios tengan efecto se debe reiniciar el servicio:
+
+    sudo systemctl restart tomcat
+
+### 8 Acceder a la interfaz web
+
+La ruta al panel de administracción es http://server_IP:8080/manager/html. Para ingresar es necesario utilizar las credenciales asignadas en el archivo tomcat-users.xml.
+
+Desde aquí es posible controlar las aplicaciones desplegadas con los controles Start, Stop, Reload, Deploy, y Undeploy.
+
+Para crear virtualhosts podemos acceder al panel de hosts http://server_IP:8080/host-manager/html/
