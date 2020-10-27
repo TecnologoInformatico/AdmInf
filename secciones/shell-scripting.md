@@ -18,7 +18,7 @@ Para asignar una variable se debe especificar su nombre siguiendo por un signo d
 
 Para acceder al valor de las variables se utiliza el símbolo de pesos `echo $peteco`.
 
-En caso de necesitar almacenar en una variable la salida de un comando es posible mediante el tilde invertido peteco=`ls /var`.
+En caso de necesitar almacenar en una variable la salida de un comando es posible mediante el tilde invertido peteco=`ls /var`, peteco=$(ls /var).
 
 Para declarar constantes es posible utilizar la siguiente notación.
 `declare -r MICONSTANTE="Valor de mi constante"`

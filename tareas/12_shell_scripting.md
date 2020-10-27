@@ -40,3 +40,4 @@ Cree un script con el cual sea posible desplegar una aplicación a un servidor l
 ## Enlaces
 
 - [comparar contenido de directorios](https://www.techrepublic.com/blog/linux-and-open-source/how-to-compare-the-content-of-two-or-more-directories-automatically/)
+- [notas de referencia](https://devhints.io/bash)
