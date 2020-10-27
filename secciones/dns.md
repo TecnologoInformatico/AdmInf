@@ -15,13 +15,13 @@ A modo de ejemplo, en caso de que el administrador de la red deba por algún mot
 El paquete bind9 puede ser instalado mediante:
 
 ```s
-apt-get install bind9
+apt install bind9
 ```
 
 También es muy útil la instalación de la documentación:
 
 ```s
-apt-get install bind9-doc
+apt install bind9-doc
 ```
 
 ### Configuración

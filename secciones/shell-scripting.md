@@ -143,6 +143,15 @@ case texto in
 esac
 ```
 
+## for
+
+```sh
+for i in "${arrayName[@]}"; do
+  echo $i
+done
+```
+
+
 ## Buenas ubicaciones para los Scripts
 
 El directorio `~/bin` es un buen lugar para colocar scripts de uso personal.

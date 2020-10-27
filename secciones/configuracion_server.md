@@ -11,4 +11,3 @@ Es posible configurar la zona horaria mediante el comando timedatectl.
 `timedatectl list-timezones`
 
 `sudo timedatectl set-timezone America/Montevideo`
-
