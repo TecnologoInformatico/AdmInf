@@ -23,6 +23,15 @@ En caso de necesitar almacenar en una variable la salida de un comando es posibl
 Para declarar constantes es posible utilizar la siguiente notación.
 `declare -r MICONSTANTE="Valor de mi constante"`
 
+### Valor por defecto
+
+Es posible asignarle un valor por defecto a las variables.
+
+: ${mi_variable:='valor por defecto'}
+: ${$1:='primer-parametro'}
+
+mi_variable=${mi_variable:-'por defecto'}
+
 ## Ejecución ./script.sh
 
 Para ejecutar el script, este debe tener permisos de ejecución, lo más común es asignarle los permisos 755, mientras que si corresponde que sólo el propietario tenga permiso de ejecución será 700.
@@ -143,7 +152,9 @@ case texto in
 esac
 ```
 
-## for
+## loops
+
+### for
 
 ```sh
 for i in "${arrayName[@]}"; do
@@ -151,6 +162,48 @@ for i in "${arrayName[@]}"; do
 done
 ```
 
+### while
+
+```sh
+count=1
+while [[ "$count" -le 5 ]]; do
+    echo "$count"
+    count=$((count + 1))
+done
+```
+
+## Parametros posicionales
+
+```sh
+usage () {
+    echo "$PROGNAME: usage: $PROGNAME [-f file | -i]"
+    return
+}
+
+# process command line options
+interactive=
+filename=
+while [[ -n "$1" ]]; do
+    case "$1" in
+        -f | --file)
+            shift
+            filename="$1"
+    ;;
+        -i | --interactive)
+            interactive=1
+    ;;
+    -h | --help)
+        usage
+        exit
+    ;;
+    *)
+        usage >&2
+        exit 1
+    ;;
+    esac
+    shift
+done
+```
 
 ## Buenas ubicaciones para los Scripts
 
