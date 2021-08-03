@@ -21,7 +21,8 @@ Notas de Administración de infraestructuras.
 
 - [tomcat](secciones/tomcat.md)
 - [apache](secciones/apache.md)
-- [Logs](#segunda_parte)
+- [nginx](#segunda_parte)
+- [/var/log](#segunda_parte)
 - [shell scripting](secciones/shell-scripting.md)
 - [rsync](secciones/rsync.md)
 
