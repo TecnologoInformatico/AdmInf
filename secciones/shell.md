@@ -140,7 +140,7 @@ $(comando)
 Ejemplos:
 
 ```sh
-touch archivo_$(date +%y-%M-%d)
+touch archivo_$(date +%y-%m-%d)
 echo “Mi actual ubicación es `pwd`”
 ```
 
@@ -176,21 +176,23 @@ ls /home/tecnologo >> test
 Redireccionar el error:
 
 ```sh
-ls /home/tecno 2> test.errorCombinación de comandos |
+ls /home/tecno 2> test.error
 ```
 
 ### Pipes y pipeline
 
-Las tuberías (en inglés “pipes”) son mecanismos de comunicación específicos para todos los sistemas tipo UNIX. Una tubería, simbolizada por una barra vertical | permite asignar la salida estándar (stdout) de un comando a la entrada estándar (stdin) de otro.
+Las tuberías (en inglés “pipes”) son mecanismos de comunicación específicos para todos los sistemas tipo UNIX. Una tubería, simbolizada por una barra vertical `|` permite asignar la salida estándar (stdout) de un comando a la entrada estándar (stdin) de otro.
 Un pipeline es la ejecución simultánea de 2 o más comandos simples comunicados por un pipe.
 
 ### Comando tee
 
 Lee de la entrada estándar y escribe en la salida estándar o un archivo.
 
-Ejemplo: `cat /etc/passwd | tee -a testVariables del entorno del sistema`
+Ejemplo: `cat /etc/passwd | tee -a test`
 
-## bashrc
+## Variables del entorno del sistema
+
+### bashrc
 
 `~/.bashrc`
 

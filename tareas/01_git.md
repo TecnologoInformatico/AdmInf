@@ -10,13 +10,13 @@ en el archivo `test.txt` ingrese un texto de prueba.
 con el nombre del equipo.
 7. Agregue todos los cambios realizados y realice un commit.
 8. Verifique y estudie en que estado se encuentra el repositorio.
-9. Muevase a la rama `master` y realice un merge con la rama `test`.
+9. Muevase a la rama `main` y realice un merge con la rama `test`.
 10. Cree un repositorio en un servidor remoto y establezcalo como `remote`.
 11. *PC B* Clone el repositorio desde otro equipo o de no ser posible en otra carpeta.
 12. *PC B* Cree una nueva rama `test2` y realice cambios en los archivos y luego actualice
-la rama master con esos cambios.
+la rama main con esos cambios.
 13. *PC B* Agregue los cambios, realice un `commit` y un `push` al repositorio remoto.
-14. Realice cambios en la rama `test` y luego actualice la rama master con esos cambios.
+14. Realice cambios en la rama `test` y luego actualice la rama main con esos cambios.
 15. Intente hacer un `push`, baje los cambios y solucione los conflictos.
 16. Realice un `fetch` y de ser necesario un `pull`.
 

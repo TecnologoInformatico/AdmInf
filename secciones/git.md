@@ -2,6 +2,8 @@
 
 Git es un sistema de control de versiones distribuido libre, para manejar proyectos de cualquier magnitud.
 
+![git](./img/git_xkcd.png)
+
 ## Estados y áreas
 
 Git tiene tres principales estados:

@@ -4,15 +4,18 @@
 
 Explique que hacen los siguientes comandos de bash:
 
-- ls
-- cd ~
-- mkdir
-- mv
-- cp
-- pwd
-- man
-- cat
-- less
+- `ls`
+- `cd ~`
+- `mkdir`
+- `mv`
+- `cp`
+- `pwd`
+- `man`
+- `cat`
+- `less`
+- `more`
+- `head`
+- `tail`
 
 ## git
 
@@ -27,6 +30,12 @@ Explique que hacen los siguientes comandos de bash:
 ## Sysadmin
 
 Describa lo que considera es la responsabilidad de un administrador de infraestructuras, así como las herramientas que es conveniente que sepa utilizar.
+
+- Documentar
+- Generar procedimientos
+  - Puestas en producción
+  - Backups
+  - Mantenimientos (actualizaciones)
 
 ## Desarrollo
 
