@@ -4,33 +4,37 @@
 
 Secure Shell ssh, al igual que telnet se utiliza para gestionar el login de acceso a un sistema remoto. Pero a diferencia de telnet, ssh establece una conexión cifrada con el sistema remoto, además de proporcionar otras posibilidades.
 
-La primera vez que realizas la conexión debes aceptar la firma del otro host. De esta manera se establece una relación de confianza.
-
 sintaxis:
 
-    ssh user@hostname [command]
+`ssh user@hostname [comando]`
+
+La primera vez que realizas la conexión debes aceptar la firma del otro host. De esta manera se establece una relación de confianza.
+
+```ssh
+RSA key fingerprint is
+41:ed:7a:df:23:19:bf:3c:a5:17:bc:61:b3:7f:d9:bb.
+Are you sure you want to continue connecting (yes/no)?
+```
 
 ### Como instalar un servidor SSH en linux
 
 comando para instalar los paquetes del servicio SSH.
 
-    sudo apt-get install openssh-server
+`sudo apt-get install openssh-server`
 
 Para arrancar el servidor:
 
-    sudo /etc/init.d/ssh start
+`sudo /etc/init.d/ssh start`
 
 Para parar el servidor:
 
-    sudo /etc/init.d/ssh stop
+`sudo /etc/init.d/ssh stop`
 
 ### Autenticación ssh basada en par de claves
 
 `ssh-keygen`
 
 El par de claves se genera por defecto en el directorio `/home/username/.ssh/id_rsa`.
-
-[ssh key-based authentication](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
 
 `ssh-copy-id -i ~/.ssh/id_rsa.pub hostname`
 
@@ -141,5 +145,6 @@ Remote Desktop Protocol (RDP) es un protocolo propietario desarrollado por
 ## Enlaces
 
 - [Configurar ssh con par de claves](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
+- [github vía ssh](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 - [ssh - public key](https://kb.iu.edu/d/aews)
 - [Acceso remoto de windows a linux](https://www.dedoimedo.com/computers/remote-windows-linux.html)
