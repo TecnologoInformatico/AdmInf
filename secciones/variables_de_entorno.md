@@ -40,7 +40,7 @@ Ejemplo: `echo $PATH` o `printenv PATH`
 
 ### set
 
-El comando `set` es un buuiltin de shell y tiene una función similar a printenv, permitiendonos ver las variables almacenadas en el entorno, pero además mostrará los datos almacenados en la shell.
+El comando `set` es un builtin de shell y tiene una función similar a printenv, permitiendonos ver las variables almacenadas en el entorno, pero además mostrará los datos almacenados en la shell.
 
 EJ: `set | less`
 
@@ -80,3 +80,10 @@ Ejemplo de PATH en el ~/.bashrc
 
 ### PS1
 
+Variable de entorno que define el `prompt` a utilizar.
+
+Ejemplo:
+
+```sh
+\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \[\033[01;32m\]$(parse_git_branch)\[\033[00m\] \n $(date +%X) \$
+```

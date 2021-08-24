@@ -168,4 +168,4 @@ También puede consultar el comando de ayuda `:help vimrc-intro` o  `:help vimrc
 - [tutorial - Open vim](https://www.openvim.com/)
 - [juego - PacVim (GitHub Project)](https://github.com/jmoon018/PacVim)
 - [juego - vim adventures](https://vim-adventures.com/)
-
+- [esc key](https://vim.fandom.com/wiki/Avoid_the_escape_key)

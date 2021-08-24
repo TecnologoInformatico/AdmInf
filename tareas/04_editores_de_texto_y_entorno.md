@@ -3,7 +3,7 @@
 ## vim
 
 1. Verifique la versión que tiene instalada de `vi`.
-2. Compruebe si tiene instalado `vim`, de lo contrario instalelo y cree un alias tal que al ejecutar `vi`, en realidad se ejecute `vim`.
+2. Compruebe si tiene instalado `vim`, si llegara a ser necesario cree un alias tal que al ejecutar `vi`, en realidad se ejecute `vim`.
 3. Escriba un script simple
 
 ```sh
@@ -11,6 +11,10 @@
 
 echo 'HELLO WORLD!'
 ```
+
+4. Investigue como mostrar los números de línea y como fijar esta configuración.
+5. Realice el `vimtutor`.
+6. Documente desplazamiento básico, formas de buscar en el documento y atajos que considere útiles.
 
 ## Variables de entorno
 
