@@ -3,7 +3,7 @@
 ## Practica
 
 1. Crear un script que imprima `hola mundo`.
-2. Crear un script que imprima `hola usuario`, siendo usuario un argumento.
+2. Modifique el script para que imprima `hola usuario`, siendo usuario un argumento y en caso de no pasarle argumentos usuario sea el usuario actual.
 3. Imprimir la ubicación del script y el nombre del script.
 4. Imprimir los argumentos que se le pasan al script en orden inverso.
 

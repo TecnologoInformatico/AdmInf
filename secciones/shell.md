@@ -199,3 +199,4 @@ Ejemplo: `cat /etc/passwd | tee -a test`
 ## Bibliografía / Link's
 
 - [GNU / Manual bash](https://www.gnu.org/software/bash/manual/bash.html#What-is-Bash_003f)
+- [BashSheet](https://mywiki.wooledge.org/BashSheet)
