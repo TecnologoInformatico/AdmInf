@@ -1,3 +1,11 @@
 bin/
 /private/*
 *.swp
+
+# vuepress & publish script
+node_modules
+.temp
+.cache
+**/.vuepress/dist
+.publish.sh
+# -------------------------

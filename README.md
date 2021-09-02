@@ -14,7 +14,7 @@ Notas de Administración de infraestructuras.
 - [variables de entorno](secciones/variables_de_entorno.md)
 - [Editores de texto](secciones/editores_de_texto.md)
 - [shell scripting](secciones/shell-scripting.md)
-- [find](secciones/find.md)
+- [find](secciones/busquedas.md)
 
 ### Segunda parte
 

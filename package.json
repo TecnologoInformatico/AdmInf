@@ -1,0 +1,15 @@
+{
+  "name": "adminf-2021",
+  "version": "1.0.0",
+  "description": "Notas de administración de infraestructuras",
+  "main": "index.js",
+  "author": "Diego Mascheroni <maskeee@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.23"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev .",
+    "docs:build": "vuepress build ."
+  }
+}

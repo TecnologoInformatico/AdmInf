@@ -168,9 +168,11 @@ Para utilizar la interfaz web de mantenimiento, es necesario agregar un usuario 
 Los roles que le asignaremos al usuario son manager-gui y admin-gui.
 tomcat-users.xml — Admin User
 
+```xml
 <tomcat-users . . .>
     <user username="admin" password="password" roles="manager-gui,admin-gui"/>
 </tomcat-users>
+```
 
 Guardar y cerrar el archivo.
 
