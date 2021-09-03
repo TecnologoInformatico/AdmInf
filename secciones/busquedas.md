@@ -7,6 +7,8 @@ La busqueda de archivos es una tarea frecuente en un sistema, veamos un par de h
 
 ## locate
 
+[locate en ubuntu?](https://askubuntu.com/questions/1183750/ubuntu-19-10-why-is-the-locate-command-missing)
+
 Una forma sencilla de encontrar archivos es mediante el programa `locate`, el cual realiza una búsqueda rápida en una base de datos de directorios, y finalmente retorna cada nombre que coincida con el criterio.
 
 Por ejemplo si se quiere encontrar todos los programas con el texto `zip` en el nombre:
