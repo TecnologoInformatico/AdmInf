@@ -9,3 +9,5 @@ node_modules
 **/.vuepress/dist
 .publish.sh
 # -------------------------
+
+.vuepress

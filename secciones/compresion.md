@@ -85,6 +85,20 @@ Programas que incluye:
 - bzcat (descomprime hacia stdout, la salida estandar `bzip2 -c`)
 - bzip2recover (Extrae bloques de archivos bz2 dañados)
 
+## XZ Utils
+
+XZ Utils es un software libre para la compresión de datos con un gran nivel de compresión. La utilidad XZ fue escrita para sistemas tipo POSIX, pero también funciona en sistemas no POSIX.
+
+Por lo general, XZ crea archivos 30 % menores que los producidos por gzip y 15 % menores que con bzip2.
+
+XZ Utils consiste en varios componentes:
+
+- liblzma es una  librería de compresión con una API similar a la de zlib.
+- xz es una herramienta de linea de comando con una sintaxis similar a la de gzip.
+- xzdec herramienta de descompresión menor a la herramienta xz completa.
+- Serie de scripts (xzgrep, xzdiff, etc.) adaptados de gzip para facilitar la visualización, busqueda y comparación de archivos comprimidos.
+- Emulación de las herramientas de la cli de LZMA.
+
 ## Archivado
 
 Una tarea frecuente al administrar datos en conjunto con la compresión es la de archivar, proceso por el cual se almacenan varios archivos como uno único. Esto se realiza por lo general como parte de un sistema de backup o para mover información desde un sistema activo hacia algún almacenamiento de largo plazo.
@@ -158,4 +172,5 @@ unzip zipFile.zip -d myNewFolder
 
 ## Fuentes y enlaces
 
-- [TLCL | The linux Command Line book]()
+- [TLCL | The linux Command Line book](https://www.linuxcommand.org/tlcl.php)
+- [Sitio de XZ Utils](https://tukaani.org/xz/)

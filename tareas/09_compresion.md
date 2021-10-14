@@ -1,5 +1,7 @@
 # Empaquetado y Compresión
 
+[🔗 Tarea 09 | tar](https://classroom.github.com/a/3COQv11L)
+
 1. Clone el repositorio `https://github.com/picandocodigo/ci_js.git` en `~/repo/compresion`
 2. realice un tar sin compresión del repositorio: `~/bak/repo_bak_01.tar`.
 3. realice un tar con compresión del repositorio: `~/bak/repo_bak_02.tgz`.

@@ -6,6 +6,7 @@ Esta escrito en Java, y puede funcionar en cualquier sistema operativo que dispo
 
 ## Tarea
 
+
 ### 1 — Instalar Java
 
 Tomcat requiere que Java se encuentre instalado en el servidor, para que así el código Java pueda ser interpretado en el servidor, para esto instalaremos OpenJDK mediante apt.
@@ -188,10 +189,12 @@ Para el panel de hosts:
 
 Se puede comentar la restricción o agregar la IP remota para habilitar el acceso.
 
+```xml
 <Context antiResourceLocking="false" privileged="true" >
   <!--<Valve className="org.apache.catalina.valves.RemoteAddrValve"
          allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />-->
 </Context>
+```
 
 Para que los cambios tengan efecto se debe reiniciar el servicio:
 

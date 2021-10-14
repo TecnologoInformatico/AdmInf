@@ -18,13 +18,15 @@ Notas de Administración de infraestructuras.
 
 ### Segunda parte
 
-- [Permisos, usuarios y grupos](secciones/permisos_usuarios_y_grupos.md)
-- [Procesos y servicios](secciones/procesos_y_servicios.md)
-- [Empaquetado y compresión](secciones/compresion.md)
-- [Tareas programadas](secciones/tareas_programadas.md)
-- [Gestores de paquetes](secciones/gestores_de_paquetes.md)
-- [tomcat](secciones/tomcat.md)
 - [apache](secciones/apache.md)
+- [Permisos, usuarios y grupos](secciones/permisos_usuarios_y_grupos.md)
+- [Gestores de paquetes](secciones/gestores_de_paquetes.md)
+- [Empaquetado y compresión](secciones/compresion.md)
+  - [📽️ Video](https://drive.google.com/file/d/1DmxuB8e03ZfXu_Sq8Buh5Itdf2mLGlu-/view?usp=sharing)
+  - [🧑‍💻 Tarea](tareas/09_compresion.md)
+- [Tareas programadas](secciones/tareas_programadas.md)
+- [Procesos y servicios](secciones/procesos_y_servicios.md)
+- [tomcat](secciones/tomcat.md)
 - [Logs](#segunda_parte)
 
 [Enlaces externos](docs/enlaces.md)
