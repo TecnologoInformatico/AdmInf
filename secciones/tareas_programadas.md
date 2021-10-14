@@ -8,7 +8,9 @@ En el mundo UNIX las tareas programadas tienen en un lugar destacado a las tarea
 
 ## crond
 
-Es un "demonio", este programa esta siempre ejecutándose, el mismo busca tareas a realizar cada minuto en el archivo crontab.
+Cron es una utilidad que permite a los usuarios programar comandos para que sean ejecutadas como tareas repetitibas en determinados intervalos de tiempo. Las tareas programadas en cron son denominadas `cron jobs`. Los usuarios pueden determinar que tipo de tareas desean automatizar y en que momento debe ser ejecutadas.
+
+Es un "demonio", un proceso que se ejecuta en segundo plano, de forma no iterativa. El mismo busca tareas a realizar cada minuto en el archivo crontab.
 
 ### crontab
 
