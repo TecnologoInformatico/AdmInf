@@ -25,6 +25,10 @@ Notas de Administración de infraestructuras.
   - [📽️ Video](https://drive.google.com/file/d/1DmxuB8e03ZfXu_Sq8Buh5Itdf2mLGlu-/view?usp=sharing)
   - [🧑‍💻 Tarea](tareas/09_compresion.md)
 - [Tareas programadas](secciones/tareas_programadas.md)
+- LAMP
+  - [PHP](secciones/php.md)
+  - [MySQL](secciones/mysql.md)
+  - [phpmyadmin](secciones/phpmyadmin.md)
 - [Procesos y servicios](secciones/procesos_y_servicios.md)
 - [tomcat](secciones/tomcat.md)
 - [Logs](#segunda_parte)

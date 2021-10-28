@@ -1,10 +1,10 @@
 # PHP
 
-![php logo](img/php-logo-official-1100px.png)
+![php logo](./img/php-logo-official-1100px.png)
 
 PHP (acrónimo recursivo de PHP: Hypertext Preprocessor) es uno de los lenguajes de programación y scripting del lado del servidor más utilizados. Es de código abierto y se utiliza principalmente para el desarrollo web.
 
-![estádisticas web](img/PHP-Tops-Server-Side-Languages-W3Techs.png)
+![estádisticas web](./img/PHP-Tops-Server-Side-Languages-W3Techs.png)
 
 ```php
 <?php
