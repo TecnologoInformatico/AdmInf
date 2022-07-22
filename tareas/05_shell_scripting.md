@@ -1,3 +1,6 @@
+# Shell scripting
+
+```bash
 #!/bin/bash
 
 # La primera línea del script es el [shebang](http://en.wikipedia.org/wiki/Shebang_(Unix)) que le indica al sistema 
@@ -167,3 +170,4 @@ sort file.txt
 uniq -d file.txt
 # imprime sólo la primera columna antes de cada ',' en el archivo|
 cut -d ',' -f 1 file.txt
+```
