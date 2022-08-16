@@ -1,4 +1,4 @@
-# Tarea git
+# Tarea 02 | git
 
 1. Inicializar un repositorio en el directorio ~/repo/tarea01
 2. Cree un archivo README.md y otro test.txt

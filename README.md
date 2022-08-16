@@ -8,6 +8,7 @@ Notas de Administración de infraestructuras.
 
 - [shell](secciones/shell.md)
 - [git](secciones/git.md)
+  - [markdown](secciones/markdown.md)
 - [redirección](secciones/redireccion.md)
 - [Acceso Remoto](secciones/acceso_remoto.md)
 - [rsync](secciones/rsync.md)
