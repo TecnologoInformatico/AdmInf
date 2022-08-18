@@ -2,6 +2,36 @@
 
 Notas de Administración de infraestructuras.
 
+## 📅 18/08 git
+
+- [ ] `git push`
+- [ ] `git pull`
+- [ ] Ramas
+- [ ] ¿ssh?
+
+- [🛠️ tarea 2 | git](./tareas/02_git.md)
+
+## 📅 16/08 git
+
+Git es un sistema de control de versiones distribuido libre, para manejar proyectos de cualquier magnitud.
+
+Vimos conceptos básicos como inicializar un repositorio, `git clone` o `git init` y los estados dentro del área de trabajo, `modified`, `staged` y `commited`.
+
+- [📔 git](secciones/git.md)
+
+## 📅 11/08 Shell
+
+Para interactuar con una computadora existen intefaces gráficas `GUI` e interfaces de linea de comandos, lo que se denomina `shell`.
+
+La shell es un interpete de comandos intermediaria entre el Sistema Operativo y el usuario.
+
+- [📔 shell](secciones/shell.md)
+- [🛠️ tarea 1 | shell](./tareas/01_shell.md)
+
+## 📅 09/08 Introducción
+
+Presentación del curso, [tarea 0](./tareas/00_cuestionario.md) y conceptos básicos de shell.
+
 ## Índice
 
 ### Primera parte

@@ -10,7 +10,8 @@ module.exports = {
           text: 'Tareas', 
           children: [
             { text: '00 | Cuestionario', link: '/tareas/00_cuestionario.html' },
-            { text: '01 | shell', link: '/tareas/01_shell.html' }
+            { text: '01 | shell', link: '/tareas/01_shell.html' },
+            { text: '02 | git', link: '/tareas/02_git.html' }
           ]
         }
       ]
