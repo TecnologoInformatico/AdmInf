@@ -63,8 +63,8 @@ Please contact your system administrator.
 Add correct host key in /home/maske/.ssh/known_hosts to get rid of this message.
 Offending RSA key in /home/maske/.ssh/known_hosts:17
   remove with:
-  ssh-keygen -f "/home/maske/.ssh/known_hosts" -R "dilemak.com"
-RSA host key for dilemak.com has changed and you have requested strict checking.
+  ssh-keygen -f "/home/maske/.ssh/known_hosts" -R "tecnologoinformatico.com"
+RSA host key for tecnologoinformatico.com has changed and you have requested strict checking.
 Host key verification failed.
 
 ### Desactivar login con root via ssh
@@ -117,7 +117,7 @@ sftp username@remote_hostname_or_IP:file :    Copia el archivo designado (file) 
 ## Clientes con interfaz Grafica de los servicios SSH , SCP , SFTP
 
 En windows se puede utilizar puTTY tanto  para  utilizar cliente SSH como para SCP y SFTP
-Tambien podemos encontrar WinSCP como cliente SCP, FreeSSHD como Cliente SSH y SFTP.
+Tambien podemos encontrar WinSCP como cliente SCP, FreeSSHD como Cliente SSH y SFTP y FileZilla como cliente FTP y SFTP.
 
 ## Remmina
 

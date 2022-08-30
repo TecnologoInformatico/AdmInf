@@ -158,7 +158,7 @@ Ejemplo: `:set number`
 
 Las lineas que comienzan con " son un comentario y no son leidas por vim.
 
-Se puede buscar otros ejemplos en el archivo vimrc_example.vim. 
+Se puede buscar otros ejemplos en el archivo vimrc_example.vim.
 También puede consultar el comando de ayuda `:help vimrc-intro` o  `:help vimrc_example.vim`.
 
 ## Enlaces

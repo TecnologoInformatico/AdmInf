@@ -1,5 +1,7 @@
 # Tarea 02 | git
 
+[🔗 classroom](https://classroom.github.com/a/T7MzGuBZ)
+
 1. Inicializar un repositorio en el directorio ~/repo/tarea01
 2. Cree un archivo README.md y otro test.txt
 3. En el readme ingrese un titulo y una lista con los miembros del equipo,

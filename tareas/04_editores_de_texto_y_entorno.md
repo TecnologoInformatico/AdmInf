@@ -1,6 +1,10 @@
 # Editores de texto y entorno
 
+[🔗 classroom](https://classroom.github.com/a/Yp-CvTXG)
+
 ## vim
+
+### Test vim
 
 1. Verifique la versión que tiene instalada de `vi`.
 2. Compruebe si tiene instalado `vim`, si llegara a ser necesario cree un alias tal que al ejecutar `vi`, en realidad se ejecute `vim`.
@@ -12,9 +16,11 @@
 echo 'HELLO WORLD!'
 ```
 
-4. Investigue como mostrar los números de línea y como fijar esta configuración.
-5. Realice el `vimtutor`.
-6. Documente desplazamiento básico, formas de buscar en el documento y atajos que considere útiles.
+### vimtutor
+
+1. Realice el `vimtutor`.
+2. Documente desplazamiento básico, formas de buscar en el documento y atajos que considere útiles.
+3. Investigue como mostrar los números de línea y como fijar esta configuración.
 
 ## Variables de entorno
 

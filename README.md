@@ -2,16 +2,22 @@
 
 Notas de Administración de infraestructuras.
 
-## 📅 18/08 git
+## 30/08 Variables de entorno y editores de texto
 
-- [ ] `git push`
-- [ ] `git pull`
-- [ ] Ramas
-- [ ] ¿ssh?
+- [📔 Variables de entorno](secciones/variables_de_entorno.md)
+- [📔 Editores de texto](secciones/editores_de_texto.md)
+- [🛠️ tarea 4 | Editores de texto y variables de entorno](./tareas/04_editores_de_texto_y_entorno.md)
+
+## 23/08 Acceso remoto
+
+- [📔 Acceso remoto](secciones/acceso_remoto.md)
+- [🛠️ tarea 3 | Acceso remoto](./tareas/03_acceso_remoto.md)
+
+## 18/08 git
 
 - [🛠️ tarea 2 | git](./tareas/02_git.md)
 
-## 📅 16/08 git
+## 16/08 git
 
 Git es un sistema de control de versiones distribuido libre, para manejar proyectos de cualquier magnitud.
 
@@ -19,7 +25,7 @@ Vimos conceptos básicos como inicializar un repositorio, `git clone` o `git ini
 
 - [📔 git](secciones/git.md)
 
-## 📅 11/08 Shell
+## 11/08 Shell
 
 Para interactuar con una computadora existen intefaces gráficas `GUI` e interfaces de linea de comandos, lo que se denomina `shell`.
 
@@ -28,7 +34,7 @@ La shell es un interpete de comandos intermediaria entre el Sistema Operativo y 
 - [📔 shell](secciones/shell.md)
 - [🛠️ tarea 1 | shell](./tareas/01_shell.md)
 
-## 📅 09/08 Introducción
+## 09/08 Introducción
 
 Presentación del curso, [tarea 0](./tareas/00_cuestionario.md) y conceptos básicos de shell.
 

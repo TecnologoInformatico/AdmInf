@@ -1,5 +1,7 @@
 # Tarea
 
+[🔗 classroom](https://classroom.github.com/a/giJcA0wq)
+
 1. Cree el Directorio 'sandbox' en su directorio home.
 2. Cree el archivo test.txt dentro del directorio recién creado, sin moverse. Registre en la sección de solución distintas alternativas para crear el archivo.
 3. Muevase al directorio antes creado y agregue dos nuevos directorios, directorio_01 y directorio_02.
