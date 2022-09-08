@@ -2,6 +2,13 @@
 
 Notas de Administración de infraestructuras.
 
+[📦 carpeta bin de gitbash](/gitbash_bin.zip)
+
+## 06/09 Shell scripting
+
+- [📔 Shell scripting](secciones/shell-scripting.md)
+- [🛠️ tarea 5 | Shell scripting](./tareas/05_shell_scripting.md)
+
 ## 30/08 Variables de entorno y editores de texto
 
 - [📔 Variables de entorno](secciones/variables_de_entorno.md)

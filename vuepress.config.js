@@ -14,6 +14,7 @@ module.exports = {
             { text: '02 | git', link: '/tareas/02_git.html' },
             { text: '03 | Acceso remoto', link: '/tareas/03_acceso_remoto.html' },
             { text: '04 | Editores de texto y entorno', link: '/tareas/04_editores_de_texto_y_entorno.html' },
+            { text: '05 | Shell scripting', link: '/tareas/05_shell_scripting.html' },
           ]
         }
       ]
