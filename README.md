@@ -2,7 +2,11 @@
 
 Notas de Administración de infraestructuras.
 
-[📦 carpeta bin de gitbash](/gitbash_bin.zip)
+- [🛠️ Solución de tareas primer parte](https://github.com/TecnologoInformatico/solucion_tareas)
+- [📦 carpeta bin de gitbash](/gitbash_bin.zip)
+- IP server 2: `152.67.32.23`
+
+## 20/09 Parcial 1
 
 ## 06/09 Shell scripting
 

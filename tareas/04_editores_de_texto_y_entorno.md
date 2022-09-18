@@ -24,7 +24,7 @@ echo 'HELLO WORLD!'
 
 ## Variables de entorno
 
-Establesca el directorio `~/customPath/mi/super/secret/pathFolder` de tal modo que lo ingresado allí quede dentro del listado del `PATH`. Se puede establecer sólo para la sesión actual o dejar fijo, en este caso probar ambas formas, primero en la sesión y luego de manera fija.
+Establezca el directorio `~/customPath/mi/super/secret/pathFolder` de tal modo que lo ingresado allí quede dentro del listado del `PATH`. Se puede establecer sólo para la sesión actual o dejar fijo, en este caso probar ambas formas, primero en la sesión y luego de manera fija.
 
 1. Crear el directorio super secreto.
 2. Agregar una entrada al PATH.

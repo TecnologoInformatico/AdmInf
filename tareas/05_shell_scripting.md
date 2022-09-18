@@ -1,5 +1,7 @@
 # Shell scripting
 
+[🔗 classroom](https://classroom.github.com/a/zQOpPjs6)
+
 Genere un script que sirva para crear nuevos scripts, tal que:
 
 1. Se creará un archivo en la ubicación pasada por argumento.
@@ -20,8 +22,9 @@ Ejemplo de ejecución:
 mkscrip.bash \
     -d "Script para crear scripts con descripción." \
     -u "-h (ayuda) -d (descripción) scriptname" \
-    -a "Diego Mascheroni"
-    -e "diego.mascheroni@utec.edu.uy"
+    -a "Diego Mascheroni" \
+    -e "diego.mascheroni@utec.edu.uy" \
+    ~/miscrpit.bash
 ```
 
 Resultado:
