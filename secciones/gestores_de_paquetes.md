@@ -15,6 +15,7 @@ Los paquetes son creados por una persona conocida como `package maintainer`, qui
 Herramienta de bajo nivel para la instalación y mantenimiento de paquetes .deb.
 
 `dpkg --install package_file.deb`
+`dpkg -i package_file.deb`
 
 Listar paquetes instalados:
 

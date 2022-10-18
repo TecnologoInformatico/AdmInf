@@ -4,9 +4,61 @@ Notas de Administración de infraestructuras.
 
 - [🛠️ Solución de tareas primer parte](https://github.com/TecnologoInformatico/solucion_tareas)
 - [📦 carpeta bin de gitbash](/gitbash_bin.zip)
-- IP server 2: `152.67.32.23`
+- IP server 2: `sandbox.tecnologoinformatico.com` | `152.67.32.23`
+
+## 17/10 HTML | software install
+
+- [📔 HTML](secciones/html.md)
+- [📔 Gestores de paquetes](secciones/gestores_de_paquetes.md)
+- ...
+
+## 13/10 rsync
+
+- [📔 rsync](secciones/rsync.md)
+
+## 06/10 Permisos, usuarios y grupos
+
+- [📔 Usuarios y grupos](secciones/permisos_usuarios_y_grupos.md)
+- [🛠️ Tarea 07 | Usuarios](tareas/07_permisos_usuarios_y_grupos.md)
+
+## 27/09 Apache Web Server
+
+- [📔 Apache](secciones/apache.md)
+- [🛠️ Tarea 06 | apache](tareas/06_apache.md)
+- [☁️ Oracle Cloud](https://signup.cloud.oracle.com)
+
+## Segunda parte
+
+- (J) 13/10 rsync/HTML
+- (M) 18/10 Instalar software
+- (J) 20/10 LAMP
+  - [PHP](secciones/php.md)
+  - [MySQL](secciones/mysql.md)
+  - [phpmyadmin](secciones/phpmyadmin.md)
+- (M) 25/10 CMS & frameworks (joomla, wordpress, laravel)
+- (J) 27/10 Procesos y servicios y Tareas Programadas
+- (M) 01/11 ¿Contenedores? lxd & docker
+- (J) 03/11 nginx
+- (M) 08/11 tmux, fzf, plugins, etc...
+- (J) 09/11 Repaso
+
+- [apache](secciones/apache.md)
+- [Permisos, usuarios y grupos](secciones/permisos_usuarios_y_grupos.md)
+- [Gestores de paquetes](secciones/gestores_de_paquetes.md)
+- [Empaquetado y compresión](secciones/compresion.md)
+- [Tareas programadas](secciones/tareas_programadas.md)
+- LAMP
+  - [PHP](secciones/php.md)
+  - [MySQL](secciones/mysql.md)
+  - [phpmyadmin](secciones/phpmyadmin.md)
+- CMS
+- [Procesos y servicios](secciones/procesos_y_servicios.md)
+- [tomcat](secciones/tomcat.md)
+- [Logs](#segunda_parte)
 
 ## 20/09 Parcial 1
+
+- [Parcial 01](https://classroom.github.com/a/conMd9QT)
 
 ## 06/09 Shell scripting
 

@@ -2,14 +2,14 @@
 
 ## Servidor Apache
 
-El servidor web Apache es el más utilizado, es poderoso, flexible y bien documentado.
+El servidor web Apache es uno de los más utilizados, es poderoso, flexible y bien documentado.
 Cada sitio o dominio se denomina virtual host, de forma tal que podremos disponer de varios sitios en una misma IP. Cada dominio configurado enviará al visitante a un directorio específico.
 
 ### Instalación
 
 ```cs
-sudo apt-get update
-sudo apt-get install apache2
+sudo apt update
+sudo apt install apache2
 ```
 
 Luego de instalar es posible comprobar el [estado del servidor](#Comprobar-estado) mediante la herramienta systemctl, service o ingresando desde el navegador a [localhost](http://localhost).
@@ -137,3 +137,15 @@ ServerName www.tecnologo.com:80
 
 $ sudo apache2ctl configtest
 $ sudo vim /etc/apache2/apache2.conf
+
+## Firewall
+
+```
+sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 80 -j ACCEPT
+sudo netfilter-persistent save
+```
+
+## Enlaces
+
+- [Apache on ubuntu](https://docs.oracle.com/en-us/iaas/developer-tutorials/tutorials/apache-on-ubuntu/01oci-ubuntu-apache-summary.htm)
+- [Apache on ubuntu](https://developer.oracle.com/tutorials/apache-php-ubuntu-oci-installation/)

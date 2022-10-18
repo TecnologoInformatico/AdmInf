@@ -15,6 +15,9 @@ module.exports = {
             { text: '03 | Acceso remoto', link: '/tareas/03_acceso_remoto.html' },
             { text: '04 | Editores de texto y entorno', link: '/tareas/04_editores_de_texto_y_entorno.html' },
             { text: '05 | Shell scripting', link: '/tareas/05_shell_scripting.html' },
+            { text: '06 | Apache', link: '/tareas/06_apache.html' },
+            { text: '07 | Usuarios', link: '/tareas/07_permisos_usuarios_y_grupos.html' },
+            { text: '08 | Instalar software', link: '/tareas/08_gestores_de_paquetes.html' },
           ]
         }
       ]
